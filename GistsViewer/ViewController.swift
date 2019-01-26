@@ -7,11 +7,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+import Networking
 
+class ViewController: UIViewController {
+    
+    let networkService = NetworkService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        networkService.request(GistsAPI.gists(page: 0, perPage: 1000), success: { (gists: [Gist]) in
+            print(gists)
+        }) { (error) in
+            print(error.localizedDescription)
+        }
     }
 
 
