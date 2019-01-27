@@ -12,4 +12,5 @@ public struct Gist: Decodable {
     public let owner: Owner
     public let id: String
     public let description: String?
+    public let updated_at: Date
 }

@@ -5,15 +5,15 @@ target 'GistsViewer' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for GistsViewer
+  pod 'QueryKit'
 
 end
 
 target 'Model' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for Model
+  
+  pod 'QueryKit'
 
 end
 

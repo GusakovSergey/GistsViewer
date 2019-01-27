@@ -9,6 +9,6 @@ import Foundation
 
 public struct Owner: Decodable {
     public let id: Int64
-    public let avatar_url: URL
+    public let avatar_url: String?
     public let login: String
 }

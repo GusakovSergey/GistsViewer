@@ -9,5 +9,5 @@ import Foundation
 
 public struct File: Decodable {
     public let filename: String
-    public let raw_url: URL
+    public let raw_url: String
 }

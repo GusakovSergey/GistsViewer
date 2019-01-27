@@ -11,8 +11,6 @@
 		574E0D1A017381296F048765 /* Pods_Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF875B765DDB7504147F60A /* Pods_Services.framework */; };
 		929DFEF6D58A9120C2D6946A /* Pods_Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696B6D3C76C17C78404A4B6D /* Pods_Model.framework */; };
 		A5854FC321FC2B930089B780 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5854FC221FC2B930089B780 /* AppDelegate.swift */; };
-		A5854FC521FC2B930089B780 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5854FC421FC2B930089B780 /* ViewController.swift */; };
-		A5854FC821FC2B930089B780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5854FC621FC2B930089B780 /* Main.storyboard */; };
 		A5854FCD21FC2B940089B780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5854FCC21FC2B940089B780 /* Assets.xcassets */; };
 		A5854FD021FC2B940089B780 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5854FCE21FC2B940089B780 /* LaunchScreen.storyboard */; };
 		A585507521FC31770089B780 /* Services.h in Headers */ = {isa = PBXBuildFile; fileRef = A585507321FC31770089B780 /* Services.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +38,30 @@
 		A58550DB21FC560C0089B780 /* Util.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A58550D321FC560B0089B780 /* Util.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A58550E021FC561B0089B780 /* Thread+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550DF21FC561B0089B780 /* Thread+Extensions.swift */; };
 		A58550E221FC582D0089B780 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550E121FC582D0089B780 /* Bundle+Extensions.swift */; };
+		A58550E521FC74190089B780 /* GistsModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550E421FC74190089B780 /* GistsModuleViewController.swift */; };
+		A58550E721FC743C0089B780 /* GistsModulePresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550E621FC743C0089B780 /* GistsModulePresenterImpl.swift */; };
+		A58550E921FC74610089B780 /* GistsModuleInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550E821FC74610089B780 /* GistsModuleInteractorImpl.swift */; };
+		A58550EB21FC747B0089B780 /* GistsModuleRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550EA21FC747B0089B780 /* GistsModuleRouterImpl.swift */; };
+		A58550ED21FC74A20089B780 /* GistsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550EC21FC74A20089B780 /* GistsModule.swift */; };
+		A58550F021FC7CB60089B780 /* GistsViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550EF21FC7CB60089B780 /* GistsViewControllerTableViewCell.swift */; };
+		A58550F221FC84E70089B780 /* FRCChangeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550F121FC84E70089B780 /* FRCChangeTracker.swift */; };
+		A58550F521FCB3370089B780 /* GistsModuleDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550F421FCB3370089B780 /* GistsModuleDataSourceImpl.swift */; };
+		A58550F721FCB8A40089B780 /* GistsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550F621FCB8A40089B780 /* GistsLoader.swift */; };
+		A58550FC21FCBD130089B780 /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550FB21FCBD130089B780 /* NSManagedObjectContext+Extensions.swift */; };
+		A58550FE21FCC4C70089B780 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550FD21FCC4C70089B780 /* AsyncOperation.swift */; };
+		A58550FF21FCC4F30089B780 /* Util.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58550D321FC560B0089B780 /* Util.framework */; };
+		A585510221FD90670089B780 /* Gist+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585510121FD90670089B780 /* Gist+Extensions.swift */; };
+		A585510521FD938F0089B780 /* Gist+Mappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585510421FD938F0089B780 /* Gist+Mappings.swift */; };
+		A585510721FDAB8C0089B780 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585510621FDAB8C0089B780 /* Managed.swift */; };
+		A585510921FDABA50089B780 /* Model+Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585510821FDABA50089B780 /* Model+Managed.swift */; };
+		A585510B21FDABE30089B780 /* Owner+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585510A21FDABE30089B780 /* Owner+Extensions.swift */; };
+		A585510D21FDACC90089B780 /* Owner+Mappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585510C21FDACC90089B780 /* Owner+Mappings.swift */; };
+		A585510F21FDACF20089B780 /* File+Mappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585510E21FDACF20089B780 /* File+Mappings.swift */; };
+		A585511221FDAD230089B780 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585511121FDAD230089B780 /* TypeAliases.swift */; };
+		A585511721FDC6080089B780 /* GistsModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585511621FDC6080089B780 /* GistsModuleFactory.swift */; };
+		A585511921FDC6A00089B780 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585511821FDC6A00089B780 /* UIStoryboard+Extensions.swift */; };
+		A585511C21FDDDC40089B780 /* Gists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A585511B21FDDDC40089B780 /* Gists.storyboard */; };
+		A585512121FE13C90089B780 /* LoadNewGistsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585512021FE13C90089B780 /* LoadNewGistsOperation.swift */; };
 		DA73E6D0658FD8FAAA428ECB /* Pods_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9431ADA971DDE3596CFC76 /* Pods_Networking.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,8 +125,6 @@
 		9F7CA24C337FC314B32FED18 /* Pods-Services.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Services.release.xcconfig"; path = "Pods/Target Support Files/Pods-Services/Pods-Services.release.xcconfig"; sourceTree = "<group>"; };
 		A5854FBF21FC2B930089B780 /* GistsViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GistsViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5854FC221FC2B930089B780 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5854FC421FC2B930089B780 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A5854FC721FC2B930089B780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5854FCA21FC2B930089B780 /* GistsViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GistsViewer.xcdatamodel; sourceTree = "<group>"; };
 		A5854FCC21FC2B940089B780 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5854FCF21FC2B940089B780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -131,6 +151,29 @@
 		A58550D621FC560C0089B780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A58550DF21FC561B0089B780 /* Thread+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thread+Extensions.swift"; sourceTree = "<group>"; };
 		A58550E121FC582D0089B780 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		A58550E421FC74190089B780 /* GistsModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModuleViewController.swift; sourceTree = "<group>"; };
+		A58550E621FC743C0089B780 /* GistsModulePresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModulePresenterImpl.swift; sourceTree = "<group>"; };
+		A58550E821FC74610089B780 /* GistsModuleInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModuleInteractorImpl.swift; sourceTree = "<group>"; };
+		A58550EA21FC747B0089B780 /* GistsModuleRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModuleRouterImpl.swift; sourceTree = "<group>"; };
+		A58550EC21FC74A20089B780 /* GistsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModule.swift; sourceTree = "<group>"; };
+		A58550EF21FC7CB60089B780 /* GistsViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		A58550F121FC84E70089B780 /* FRCChangeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRCChangeTracker.swift; sourceTree = "<group>"; };
+		A58550F421FCB3370089B780 /* GistsModuleDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModuleDataSourceImpl.swift; sourceTree = "<group>"; };
+		A58550F621FCB8A40089B780 /* GistsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsLoader.swift; sourceTree = "<group>"; };
+		A58550FB21FCBD130089B780 /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
+		A58550FD21FCC4C70089B780 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		A585510121FD90670089B780 /* Gist+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gist+Extensions.swift"; sourceTree = "<group>"; };
+		A585510421FD938F0089B780 /* Gist+Mappings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gist+Mappings.swift"; sourceTree = "<group>"; };
+		A585510621FDAB8C0089B780 /* Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
+		A585510821FDABA50089B780 /* Model+Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Managed.swift"; sourceTree = "<group>"; };
+		A585510A21FDABE30089B780 /* Owner+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Owner+Extensions.swift"; sourceTree = "<group>"; };
+		A585510C21FDACC90089B780 /* Owner+Mappings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Owner+Mappings.swift"; sourceTree = "<group>"; };
+		A585510E21FDACF20089B780 /* File+Mappings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File+Mappings.swift"; sourceTree = "<group>"; };
+		A585511121FDAD230089B780 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		A585511621FDC6080089B780 /* GistsModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModuleFactory.swift; sourceTree = "<group>"; };
+		A585511821FDC6A00089B780 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		A585511B21FDDDC40089B780 /* Gists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gists.storyboard; sourceTree = "<group>"; };
+		A585512021FE13C90089B780 /* LoadNewGistsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadNewGistsOperation.swift; sourceTree = "<group>"; };
 		AEEE988981534462ADE6EF72 /* Pods-Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking.release.xcconfig"; path = "Pods/Target Support Files/Pods-Networking/Pods-Networking.release.xcconfig"; sourceTree = "<group>"; };
 		C8048DBDC5570CD503BB5D71 /* Pods-Services.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Services.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Services/Pods-Services.debug.xcconfig"; sourceTree = "<group>"; };
 		FD2D96C9BABF4F1AF4144366 /* Pods-GistsViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistsViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GistsViewer/Pods-GistsViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58550FF21FCC4F30089B780 /* Util.framework in Frameworks */,
 				A58550B321FC32280089B780 /* Networking.framework in Frameworks */,
 				A58550B221FC32110089B780 /* Model.framework in Frameworks */,
 				574E0D1A017381296F048765 /* Pods_Services.framework in Frameworks */,
@@ -214,9 +258,9 @@
 		A5854FC121FC2B930089B780 /* GistsViewer */ = {
 			isa = PBXGroup;
 			children = (
+				A585511321FDB9A10089B780 /* Util */,
+				A585511A21FDDD860089B780 /* GistsComponent */,
 				A5854FC221FC2B930089B780 /* AppDelegate.swift */,
-				A5854FC421FC2B930089B780 /* ViewController.swift */,
-				A5854FC621FC2B930089B780 /* Main.storyboard */,
 				A5854FCC21FC2B940089B780 /* Assets.xcassets */,
 				A5854FCE21FC2B940089B780 /* LaunchScreen.storyboard */,
 				A58550CC21FC55D10089B780 /* PreparingApp.storyboard */,
@@ -228,6 +272,9 @@
 		A585507221FC31770089B780 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A585511F21FE13AA0089B780 /* GistsLoader */,
+				A585511021FDAD140089B780 /* Util */,
+				A585510321FD93780089B780 /* Mappings */,
 				A58550CA21FC55590089B780 /* ServicesContainer.swift */,
 				A585507321FC31770089B780 /* Services.h */,
 				A585507421FC31770089B780 /* Info.plist */,
@@ -250,6 +297,8 @@
 		A58550A521FC31DF0089B780 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A585510021FD90570089B780 /* ModelExtensions */,
+				A58550F821FCBBFF0089B780 /* Util */,
 				A5854FC921FC2B930089B780 /* GistsViewer.xcdatamodeld */,
 				A58550C821FC53A00089B780 /* NSPersistentContainer+Loading.swift */,
 				A58550A621FC31DF0089B780 /* Model.h */,
@@ -286,8 +335,104 @@
 				A58550D521FC560C0089B780 /* Util.h */,
 				A58550D621FC560C0089B780 /* Info.plist */,
 				A58550DF21FC561B0089B780 /* Thread+Extensions.swift */,
+				A58550FD21FCC4C70089B780 /* AsyncOperation.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		A58550E321FC73FE0089B780 /* GistsModule */ = {
+			isa = PBXGroup;
+			children = (
+				A58550F321FCB3260089B780 /* Helpers */,
+				A58550EE21FC7C930089B780 /* Views */,
+				A58550EC21FC74A20089B780 /* GistsModule.swift */,
+				A58550E421FC74190089B780 /* GistsModuleViewController.swift */,
+				A58550E621FC743C0089B780 /* GistsModulePresenterImpl.swift */,
+				A58550E821FC74610089B780 /* GistsModuleInteractorImpl.swift */,
+				A58550EA21FC747B0089B780 /* GistsModuleRouterImpl.swift */,
+				A585511621FDC6080089B780 /* GistsModuleFactory.swift */,
+			);
+			path = GistsModule;
+			sourceTree = "<group>";
+		};
+		A58550EE21FC7C930089B780 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A58550EF21FC7CB60089B780 /* GistsViewControllerTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A58550F321FCB3260089B780 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A58550F421FCB3370089B780 /* GistsModuleDataSourceImpl.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A58550F821FCBBFF0089B780 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A58550FB21FCBD130089B780 /* NSManagedObjectContext+Extensions.swift */,
+				A585510621FDAB8C0089B780 /* Managed.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A585510021FD90570089B780 /* ModelExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				A585510821FDABA50089B780 /* Model+Managed.swift */,
+				A585510121FD90670089B780 /* Gist+Extensions.swift */,
+				A585510A21FDABE30089B780 /* Owner+Extensions.swift */,
+			);
+			path = ModelExtensions;
+			sourceTree = "<group>";
+		};
+		A585510321FD93780089B780 /* Mappings */ = {
+			isa = PBXGroup;
+			children = (
+				A585510421FD938F0089B780 /* Gist+Mappings.swift */,
+				A585510C21FDACC90089B780 /* Owner+Mappings.swift */,
+				A585510E21FDACF20089B780 /* File+Mappings.swift */,
+			);
+			path = Mappings;
+			sourceTree = "<group>";
+		};
+		A585511021FDAD140089B780 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A585511121FDAD230089B780 /* TypeAliases.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A585511321FDB9A10089B780 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A58550F121FC84E70089B780 /* FRCChangeTracker.swift */,
+				A585511821FDC6A00089B780 /* UIStoryboard+Extensions.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A585511A21FDDD860089B780 /* GistsComponent */ = {
+			isa = PBXGroup;
+			children = (
+				A58550E321FC73FE0089B780 /* GistsModule */,
+				A585511B21FDDDC40089B780 /* Gists.storyboard */,
+			);
+			path = GistsComponent;
+			sourceTree = "<group>";
+		};
+		A585511F21FE13AA0089B780 /* GistsLoader */ = {
+			isa = PBXGroup;
+			children = (
+				A58550F621FCB8A40089B780 /* GistsLoader.swift */,
+				A585512021FE13C90089B780 /* LoadNewGistsOperation.swift */,
+			);
+			path = GistsLoader;
 			sourceTree = "<group>";
 		};
 		C3A06C5055E1AF30A643606F /* Pods */ = {
@@ -501,7 +646,7 @@
 			files = (
 				A5854FD021FC2B940089B780 /* LaunchScreen.storyboard in Resources */,
 				A5854FCD21FC2B940089B780 /* Assets.xcassets in Resources */,
-				A5854FC821FC2B930089B780 /* Main.storyboard in Resources */,
+				A585511C21FDDDC40089B780 /* Gists.storyboard in Resources */,
 				A58550CD21FC55D10089B780 /* PreparingApp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,12 +713,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GistsViewer/Pods-GistsViewer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QueryKit/QueryKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QueryKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -654,7 +801,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5854FC521FC2B930089B780 /* ViewController.swift in Sources */,
+				A585511721FDC6080089B780 /* GistsModuleFactory.swift in Sources */,
+				A58550E921FC74610089B780 /* GistsModuleInteractorImpl.swift in Sources */,
+				A58550EB21FC747B0089B780 /* GistsModuleRouterImpl.swift in Sources */,
+				A58550F521FCB3370089B780 /* GistsModuleDataSourceImpl.swift in Sources */,
+				A58550E521FC74190089B780 /* GistsModuleViewController.swift in Sources */,
+				A585511921FDC6A00089B780 /* UIStoryboard+Extensions.swift in Sources */,
+				A58550ED21FC74A20089B780 /* GistsModule.swift in Sources */,
+				A58550E721FC743C0089B780 /* GistsModulePresenterImpl.swift in Sources */,
+				A58550F021FC7CB60089B780 /* GistsViewControllerTableViewCell.swift in Sources */,
+				A58550F221FC84E70089B780 /* FRCChangeTracker.swift in Sources */,
 				A5854FC321FC2B930089B780 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -663,7 +819,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A585512121FE13C90089B780 /* LoadNewGistsOperation.swift in Sources */,
+				A585511221FDAD230089B780 /* TypeAliases.swift in Sources */,
+				A585510D21FDACC90089B780 /* Owner+Mappings.swift in Sources */,
+				A585510F21FDACF20089B780 /* File+Mappings.swift in Sources */,
+				A585510521FD938F0089B780 /* Gist+Mappings.swift in Sources */,
 				A58550CB21FC55590089B780 /* ServicesContainer.swift in Sources */,
+				A58550F721FCB8A40089B780 /* GistsLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,7 +847,12 @@
 			files = (
 				A58550E221FC582D0089B780 /* Bundle+Extensions.swift in Sources */,
 				A58550C921FC53A00089B780 /* NSPersistentContainer+Loading.swift in Sources */,
+				A585510221FD90670089B780 /* Gist+Extensions.swift in Sources */,
+				A585510721FDAB8C0089B780 /* Managed.swift in Sources */,
 				A58550C721FC536D0089B780 /* GistsViewer.xcdatamodeld in Sources */,
+				A58550FC21FCBD130089B780 /* NSManagedObjectContext+Extensions.swift in Sources */,
+				A585510921FDABA50089B780 /* Model+Managed.swift in Sources */,
+				A585510B21FDABE30089B780 /* Owner+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,6 +860,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58550FE21FCC4C70089B780 /* AsyncOperation.swift in Sources */,
 				A58550E021FC561B0089B780 /* Thread+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -723,14 +891,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A5854FC621FC2B930089B780 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5854FC721FC2B930089B780 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A5854FCE21FC2B940089B780 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

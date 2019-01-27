@@ -1,16 +1,20 @@
 PODS:
   - Alamofire (4.8.1)
+  - QueryKit (0.13.0)
 
 DEPENDENCIES:
   - Alamofire
+  - QueryKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - QueryKit
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  QueryKit: 406c42b9b4eb5f8dab380a9e5bd9ef656542d1f4
 
-PODFILE CHECKSUM: 12330cbd6480e54e4c4564d5b7171a348900eb37
+PODFILE CHECKSUM: c83c4141d77571e0a43b0e343d09f9fd30e0e174
 
 COCOAPODS: 1.5.3

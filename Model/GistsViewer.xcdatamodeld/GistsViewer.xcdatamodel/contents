@@ -1,4 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Commit" representedClassName=".Commit" syncable="YES" codeGenerationType="class">
+        <attribute name="additions" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="deletions" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sha" attributeType="String" syncable="YES"/>
+        <relationship name="gist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Gist" inverseName="commits" inverseEntity="Gist" syncable="YES"/>
+    </entity>
+    <entity name="File" representedClassName=".File" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contentURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="gist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Gist" inverseName="files" inverseEntity="Gist" syncable="YES"/>
+    </entity>
+    <entity name="Gist" representedClassName=".Gist" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="commits" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Commit" inverseName="gist" inverseEntity="Commit" syncable="YES"/>
+        <relationship name="files" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="File" inverseName="gist" inverseEntity="File" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Owner" inverseName="gists" inverseEntity="Owner" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Owner" representedClassName=".Owner" syncable="YES" codeGenerationType="class">
+        <attribute name="avatarURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 64" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="gists" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Gist" inverseName="owner" inverseEntity="Gist" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Commit" positionX="102.55859375" positionY="0.5546875" width="128" height="118"/>
+        <element name="File" positionX="104.9765625" positionY="141.93359375" width="128" height="103"/>
+        <element name="Gist" positionX="-188.625" positionY="67.3046875" width="128" height="133"/>
+        <element name="Owner" positionX="-447.52734375" positionY="67.00390625" width="128" height="103"/>
+    </elements>
 </model>

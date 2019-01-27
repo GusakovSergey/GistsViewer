@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 public enum GistsAPI: URLRequestConvertible {
-    case gists(page: Int, perPage: Int)
+    case gists
     
     private static let baseURLString = "https://api.github.com"
     
@@ -29,9 +29,8 @@ public enum GistsAPI: URLRequestConvertible {
     
     private var parameters: Parameters? {
         switch self {
-        case .gists(page: let page, perPage: let perPage):
-            return ["page" : page,
-                    "per_page" : perPage]
+        case .gists:
+            return ["per_page" : 100]
         }
     }
     

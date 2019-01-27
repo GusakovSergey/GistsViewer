@@ -7,8 +7,8 @@
 
 import UIKit
 import CoreData
-import Model
 import Util
+import Services
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,19 +17,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window?.rootViewController = UIStoryboard.init(name: "PreparingApp", bundle: nil).instantiateInitialViewController()
         
         NSPersistentContainer.loadGistPersistentContainer { (container) in
             Thread.onMainThread {
-                self.setupApp()
+                self.setupApp(container: container)
             }
         }
         
         return true
     }
     
-    private func setupApp() {
-        window?.rootViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateInitialViewController()
+    private func setupApp(container: NSPersistentContainer) {
+        let servicesContainer = ServicesContainer(persistentContainer: container)
+        
+        let navigationController = UINavigationController()
+        
+        let gistsVC = GistsModuleFactory.gistsViewController(servicesContainer: servicesContainer,
+                                                             navigationController: navigationController)
+        
+        navigationController.viewControllers = [gistsVC]
+        
+        window?.rootViewController = navigationController
     }
 }
 

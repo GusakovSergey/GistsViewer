@@ -13,6 +13,7 @@ extension NSPersistentContainer {
         let modelURL = Bundle.modelBundle.url(forResource: "GistsViewer", withExtension: "momd")!
         let managedObjectModel = NSManagedObjectModel(contentsOf: modelURL)!
         let container = NSPersistentContainer(name: "GistViewer", managedObjectModel: managedObjectModel)
+        
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")

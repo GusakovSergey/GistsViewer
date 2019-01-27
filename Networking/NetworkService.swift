@@ -23,9 +23,11 @@ public final class NetworkService {
                                       failure: @escaping (Error)->()) {
         sessionManager.request(requestConvertible).responseData(queue: queue) { (dataResponse) in
             let mappedResponse = dataResponse.flatMap({ (data) -> T in
-                try JSONDecoder().decode(T.self, from: data)
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                return try decoder.decode(T.self, from: data)
             })
-            
+
             if let parsedValue = mappedResponse.value {
                 success(parsedValue)
             } else if let error = mappedResponse.error {
