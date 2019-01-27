@@ -7,6 +7,7 @@
 
 import UIKit
 import Util
+import Nuke
 
 class GistsModuleViewController: UIViewController, GistsModuleView {
     @IBOutlet weak var tableView: UITableView!
@@ -55,6 +56,10 @@ class GistsModuleViewController: UIViewController, GistsModuleView {
     private func configureCell(_ cell: GistsViewControllerTableViewCell, withGist gist: GistsModule.Gist) {
         cell.gistNameLabel.text = gist.gistName
         cell.gistOwnerLabel.text = gist.ownerName
+        if let urlString = gist.ownerAvatarURL, let url = URL(string: urlString) {
+            Nuke.loadImage(with: url,
+                           into: cell.avatarImageView)
+        }
     }
 }
 

@@ -43,7 +43,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="owner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8D-U4-IE2">
-                                                    <rect key="frame" x="73" y="38" width="45" height="20"/>
+                                                    <rect key="frame" x="73" y="35.5" width="45" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -55,7 +55,7 @@
                                                 <constraint firstItem="AqH-h1-gk1" firstAttribute="leading" secondItem="rVd-BL-HM1" secondAttribute="trailing" constant="8" id="Zli-F2-YGL"/>
                                                 <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="n8D-U4-IE2" secondAttribute="trailing" id="fXf-wh-S0O"/>
                                                 <constraint firstItem="rVd-BL-HM1" firstAttribute="centerY" secondItem="thK-Ix-eFT" secondAttribute="centerY" id="ktD-x0-4YI"/>
-                                                <constraint firstAttribute="bottom" secondItem="n8D-U4-IE2" secondAttribute="bottom" constant="2.5" id="tam-HW-K1s"/>
+                                                <constraint firstItem="n8D-U4-IE2" firstAttribute="firstBaseline" secondItem="rVd-BL-HM1" secondAttribute="bottom" id="u6W-E8-QSP"/>
                                                 <constraint firstItem="rVd-BL-HM1" firstAttribute="leading" secondItem="thK-Ix-eFT" secondAttribute="leading" constant="25" id="yBf-L8-9YP"/>
                                                 <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="AqH-h1-gk1" secondAttribute="trailing" id="yWe-EA-laD"/>
                                             </constraints>
