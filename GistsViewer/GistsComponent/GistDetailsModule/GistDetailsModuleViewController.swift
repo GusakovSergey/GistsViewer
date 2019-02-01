@@ -39,7 +39,9 @@ class GistDetailsModuleViewController: UIViewController, GistDetailsModuleView {
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        
+        title = "Gist Description"
+        
         headerContentView.boundsDidChangeHandler = { [weak self] in
             guard let self = self else {return}
             self.tableView.tableHeaderView?.frame = self.headerContentView.bounds

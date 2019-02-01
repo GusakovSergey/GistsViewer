@@ -18,6 +18,8 @@ class GistDetailsModuleRouterImpl: GistDetailsModuleRouter {
     }
     
     func showFileDetails(fileId: String) {
-        print("TODO: show file screen")
+        navigationController?.pushViewController(FileDetailsModuleFactory.fileDetailsViewController(fileId: fileId,
+                                                                                                    context: servicesContainer.mainContext),
+                                                 animated: true)
     }
 }

@@ -79,6 +79,11 @@
 		A585511C21FDDDC40089B780 /* Gists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A585511B21FDDDC40089B780 /* Gists.storyboard */; };
 		A585512121FE13C90089B780 /* LoadNewGistsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585512021FE13C90089B780 /* LoadNewGistsOperation.swift */; };
 		A59EC13B2204A8FC009D91AA /* GistDetailsModuleHeaderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC13A2204A8FC009D91AA /* GistDetailsModuleHeaderContentView.swift */; };
+		A59EC13E2204ABBB009D91AA /* FileDetailsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC13D2204ABBB009D91AA /* FileDetailsModule.swift */; };
+		A59EC1402204ADB4009D91AA /* FileDetailsModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC13F2204ADB4009D91AA /* FileDetailsModuleViewController.swift */; };
+		A59EC1422204AEF8009D91AA /* FileDetailsModulePresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1412204AEF8009D91AA /* FileDetailsModulePresenterImpl.swift */; };
+		A59EC1442204AF3B009D91AA /* FileDetailsModuleInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1432204AF3B009D91AA /* FileDetailsModuleInteractorImpl.swift */; };
+		A59EC1462204B021009D91AA /* FileDetailsModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1452204B021009D91AA /* FileDetailsModuleFactory.swift */; };
 		DA73E6D0658FD8FAAA428ECB /* Pods_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9431ADA971DDE3596CFC76 /* Pods_Networking.framework */; };
 /* End PBXBuildFile section */
 
@@ -208,6 +213,11 @@
 		A585511B21FDDDC40089B780 /* Gists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gists.storyboard; sourceTree = "<group>"; };
 		A585512021FE13C90089B780 /* LoadNewGistsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadNewGistsOperation.swift; sourceTree = "<group>"; };
 		A59EC13A2204A8FC009D91AA /* GistDetailsModuleHeaderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailsModuleHeaderContentView.swift; sourceTree = "<group>"; };
+		A59EC13D2204ABBB009D91AA /* FileDetailsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailsModule.swift; sourceTree = "<group>"; };
+		A59EC13F2204ADB4009D91AA /* FileDetailsModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailsModuleViewController.swift; sourceTree = "<group>"; };
+		A59EC1412204AEF8009D91AA /* FileDetailsModulePresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailsModulePresenterImpl.swift; sourceTree = "<group>"; };
+		A59EC1432204AF3B009D91AA /* FileDetailsModuleInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailsModuleInteractorImpl.swift; sourceTree = "<group>"; };
+		A59EC1452204B021009D91AA /* FileDetailsModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailsModuleFactory.swift; sourceTree = "<group>"; };
 		AEEE988981534462ADE6EF72 /* Pods-Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking.release.xcconfig"; path = "Pods/Target Support Files/Pods-Networking/Pods-Networking.release.xcconfig"; sourceTree = "<group>"; };
 		C8048DBDC5570CD503BB5D71 /* Pods-Services.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Services.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Services/Pods-Services.debug.xcconfig"; sourceTree = "<group>"; };
 		FD2D96C9BABF4F1AF4144366 /* Pods-GistsViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistsViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GistsViewer/Pods-GistsViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -504,6 +514,7 @@
 			children = (
 				A58550E321FC73FE0089B780 /* GistsModule */,
 				A512B66B2202020200BE3D3E /* GistDetailsModule */,
+				A59EC13C2204AB28009D91AA /* FileDetailsModule */,
 				A585511B21FDDDC40089B780 /* Gists.storyboard */,
 			);
 			path = GistsComponent;
@@ -516,6 +527,18 @@
 				A585512021FE13C90089B780 /* LoadNewGistsOperation.swift */,
 			);
 			path = GistsLoader;
+			sourceTree = "<group>";
+		};
+		A59EC13C2204AB28009D91AA /* FileDetailsModule */ = {
+			isa = PBXGroup;
+			children = (
+				A59EC13D2204ABBB009D91AA /* FileDetailsModule.swift */,
+				A59EC13F2204ADB4009D91AA /* FileDetailsModuleViewController.swift */,
+				A59EC1412204AEF8009D91AA /* FileDetailsModulePresenterImpl.swift */,
+				A59EC1432204AF3B009D91AA /* FileDetailsModuleInteractorImpl.swift */,
+				A59EC1452204B021009D91AA /* FileDetailsModuleFactory.swift */,
+			);
+			path = FileDetailsModule;
 			sourceTree = "<group>";
 		};
 		C3A06C5055E1AF30A643606F /* Pods */ = {
@@ -890,6 +913,9 @@
 				A585511721FDC6080089B780 /* GistsModuleFactory.swift in Sources */,
 				A58550E921FC74610089B780 /* GistsModuleInteractorImpl.swift in Sources */,
 				A58550EB21FC747B0089B780 /* GistsModuleRouterImpl.swift in Sources */,
+				A59EC13E2204ABBB009D91AA /* FileDetailsModule.swift in Sources */,
+				A59EC1442204AF3B009D91AA /* FileDetailsModuleInteractorImpl.swift in Sources */,
+				A59EC1422204AEF8009D91AA /* FileDetailsModulePresenterImpl.swift in Sources */,
 				A50B64252203660D00F7B20F /* GistDetailsModuleInteractorImpl.swift in Sources */,
 				A512B67322020A3F00BE3D3E /* GistDetailsModuleFileCell.swift in Sources */,
 				A50B642E2203717400F7B20F /* GistDetailsModuleRouterImpl.swift in Sources */,
@@ -899,8 +925,10 @@
 				A512B66D2202024200BE3D3E /* GistDetailsModule.swift in Sources */,
 				A585511921FDC6A00089B780 /* UIStoryboard+Extensions.swift in Sources */,
 				A58550ED21FC74A20089B780 /* GistsModule.swift in Sources */,
+				A59EC1402204ADB4009D91AA /* FileDetailsModuleViewController.swift in Sources */,
 				A59EC13B2204A8FC009D91AA /* GistDetailsModuleHeaderContentView.swift in Sources */,
 				A58550E721FC743C0089B780 /* GistsModulePresenterImpl.swift in Sources */,
+				A59EC1462204B021009D91AA /* FileDetailsModuleFactory.swift in Sources */,
 				A58550F021FC7CB60089B780 /* GistsViewControllerTableViewCell.swift in Sources */,
 				A512B66F220202A700BE3D3E /* GistDetailsModuleViewController.swift in Sources */,
 				A50B642C22036FEE00F7B20F /* GistDetailsModulePresenterImpl.swift in Sources */,

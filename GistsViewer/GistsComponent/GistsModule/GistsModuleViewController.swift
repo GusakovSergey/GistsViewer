@@ -20,7 +20,8 @@ class GistsModuleViewController: UIViewController, GistsModuleView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.tableFooterView = UIView()
+        
+        title = "Gists Viewer"
         
         refreshControll.addTarget(self, action: #selector(refreshGists), for: .valueChanged)
         
