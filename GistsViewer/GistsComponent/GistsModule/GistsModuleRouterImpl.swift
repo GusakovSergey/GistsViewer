@@ -19,6 +19,15 @@ class GistsModuleRouterImpl: GistsRouter {
     
     //MARK: - GistsRouter
     func showGistDetails(gistId: String) {
-        print("Show gist details controller")
+        guard let navVC = navigationController else {
+            assertionFailure("navVC was lost")
+            return
+        }
+        
+        let gistDetailsVC = GistDetailsModuleFactory.gistDetailsViewController(gistId: gistId,
+                                                                               servicesContainer: servicesContainer,
+                                                                               navigationController: navVC)
+        
+        navVC.pushViewController(gistDetailsVC, animated: true)
     }
 }

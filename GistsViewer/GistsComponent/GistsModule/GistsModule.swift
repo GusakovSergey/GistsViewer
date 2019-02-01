@@ -44,7 +44,7 @@ protocol GistsModulePresenter {
 
 protocol GistsModuleDataSource {
     var gistsCount: Int { get }
-    var gistsBatchChangeHandler: ((FRCChangeTrackerTypes.FRCBatch<GistsModule.Gist>)->())? { get set }
+    var gistsBatchChangeHandler: ((ChangeTracker<GistsModule.Gist>.Batch<GistsModule.Gist>)->())? { get set }
     
     func performFetch()
     func gistFor(indexPath: IndexPath) -> GistsModule.Gist

@@ -17,3 +17,6 @@ typealias WebOwner = Networking.Owner
 
 typealias CoreDataFile = Model.File
 typealias WebFile = Networking.File
+
+typealias CoreDataCommit = Model.Commit
+typealias WebCommit = Networking.Commit

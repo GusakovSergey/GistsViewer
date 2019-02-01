@@ -10,6 +10,22 @@
 		29FA296CE180BD10E31A53D5 /* Pods_GistsViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289C228784FF8485F99A2EE5 /* Pods_GistsViewer.framework */; };
 		574E0D1A017381296F048765 /* Pods_Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF875B765DDB7504147F60A /* Pods_Services.framework */; };
 		929DFEF6D58A9120C2D6946A /* Pods_Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696B6D3C76C17C78404A4B6D /* Pods_Model.framework */; };
+		A50B6423220364D800F7B20F /* ChangeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50B6422220364D800F7B20F /* ChangeTracker.swift */; };
+		A50B64252203660D00F7B20F /* GistDetailsModuleInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50B64242203660D00F7B20F /* GistDetailsModuleInteractorImpl.swift */; };
+		A50B642822036D4800F7B20F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50B642722036D4800F7B20F /* File.swift */; };
+		A50B642A22036E1900F7B20F /* File+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50B642922036E1900F7B20F /* File+Extensions.swift */; };
+		A50B642C22036FEE00F7B20F /* GistDetailsModulePresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50B642B22036FEE00F7B20F /* GistDetailsModulePresenterImpl.swift */; };
+		A50B642E2203717400F7B20F /* GistDetailsModuleRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50B642D2203717400F7B20F /* GistDetailsModuleRouterImpl.swift */; };
+		A50B64302203724900F7B20F /* GistDetailsModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50B642F2203724900F7B20F /* GistDetailsModuleFactory.swift */; };
+		A512B66D2202024200BE3D3E /* GistDetailsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512B66C2202024200BE3D3E /* GistDetailsModule.swift */; };
+		A512B66F220202A700BE3D3E /* GistDetailsModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512B66E220202A700BE3D3E /* GistDetailsModuleViewController.swift */; };
+		A512B67322020A3F00BE3D3E /* GistDetailsModuleFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512B67222020A3F00BE3D3E /* GistDetailsModuleFileCell.swift */; };
+		A512B67522020A6300BE3D3E /* GistDetailsModuleCommitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512B67422020A6300BE3D3E /* GistDetailsModuleCommitCell.swift */; };
+		A512B6782202120B00BE3D3E /* CommitsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512B6772202120B00BE3D3E /* CommitsLoader.swift */; };
+		A512B67A2202133F00BE3D3E /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512B6792202133F00BE3D3E /* Commit.swift */; };
+		A512B67C2202153E00BE3D3E /* Commit+Mappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512B67B2202153E00BE3D3E /* Commit+Mappings.swift */; };
+		A512B67E220219B700BE3D3E /* LoadCommitsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512B67D220219B700BE3D3E /* LoadCommitsOperation.swift */; };
+		A512B68022021ADB00BE3D3E /* Commit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512B67F22021ADB00BE3D3E /* Commit+Extensions.swift */; };
 		A5854FC321FC2B930089B780 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5854FC221FC2B930089B780 /* AppDelegate.swift */; };
 		A5854FCD21FC2B940089B780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5854FCC21FC2B940089B780 /* Assets.xcassets */; };
 		A5854FD021FC2B940089B780 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5854FCE21FC2B940089B780 /* LaunchScreen.storyboard */; };
@@ -62,6 +78,7 @@
 		A585511921FDC6A00089B780 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585511821FDC6A00089B780 /* UIStoryboard+Extensions.swift */; };
 		A585511C21FDDDC40089B780 /* Gists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A585511B21FDDDC40089B780 /* Gists.storyboard */; };
 		A585512121FE13C90089B780 /* LoadNewGistsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585512021FE13C90089B780 /* LoadNewGistsOperation.swift */; };
+		A59EC13B2204A8FC009D91AA /* GistDetailsModuleHeaderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC13A2204A8FC009D91AA /* GistDetailsModuleHeaderContentView.swift */; };
 		DA73E6D0658FD8FAAA428ECB /* Pods_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9431ADA971DDE3596CFC76 /* Pods_Networking.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +140,22 @@
 		537ECBA03D957F77E5878E8E /* Pods-Model.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Model.release.xcconfig"; path = "Pods/Target Support Files/Pods-Model/Pods-Model.release.xcconfig"; sourceTree = "<group>"; };
 		696B6D3C76C17C78404A4B6D /* Pods_Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7CA24C337FC314B32FED18 /* Pods-Services.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Services.release.xcconfig"; path = "Pods/Target Support Files/Pods-Services/Pods-Services.release.xcconfig"; sourceTree = "<group>"; };
+		A50B6422220364D800F7B20F /* ChangeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeTracker.swift; sourceTree = "<group>"; };
+		A50B64242203660D00F7B20F /* GistDetailsModuleInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailsModuleInteractorImpl.swift; sourceTree = "<group>"; };
+		A50B642722036D4800F7B20F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		A50B642922036E1900F7B20F /* File+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File+Extensions.swift"; sourceTree = "<group>"; };
+		A50B642B22036FEE00F7B20F /* GistDetailsModulePresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailsModulePresenterImpl.swift; sourceTree = "<group>"; };
+		A50B642D2203717400F7B20F /* GistDetailsModuleRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailsModuleRouterImpl.swift; sourceTree = "<group>"; };
+		A50B642F2203724900F7B20F /* GistDetailsModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailsModuleFactory.swift; sourceTree = "<group>"; };
+		A512B66C2202024200BE3D3E /* GistDetailsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailsModule.swift; sourceTree = "<group>"; };
+		A512B66E220202A700BE3D3E /* GistDetailsModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailsModuleViewController.swift; sourceTree = "<group>"; };
+		A512B67222020A3F00BE3D3E /* GistDetailsModuleFileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailsModuleFileCell.swift; sourceTree = "<group>"; };
+		A512B67422020A6300BE3D3E /* GistDetailsModuleCommitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailsModuleCommitCell.swift; sourceTree = "<group>"; };
+		A512B6772202120B00BE3D3E /* CommitsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsLoader.swift; sourceTree = "<group>"; };
+		A512B6792202133F00BE3D3E /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		A512B67B2202153E00BE3D3E /* Commit+Mappings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Commit+Mappings.swift"; sourceTree = "<group>"; };
+		A512B67D220219B700BE3D3E /* LoadCommitsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCommitsOperation.swift; sourceTree = "<group>"; };
+		A512B67F22021ADB00BE3D3E /* Commit+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Commit+Extensions.swift"; sourceTree = "<group>"; };
 		A5854FBF21FC2B930089B780 /* GistsViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GistsViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5854FC221FC2B930089B780 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5854FCA21FC2B930089B780 /* GistsViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GistsViewer.xcdatamodel; sourceTree = "<group>"; };
@@ -174,6 +207,7 @@
 		A585511821FDC6A00089B780 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
 		A585511B21FDDDC40089B780 /* Gists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gists.storyboard; sourceTree = "<group>"; };
 		A585512021FE13C90089B780 /* LoadNewGistsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadNewGistsOperation.swift; sourceTree = "<group>"; };
+		A59EC13A2204A8FC009D91AA /* GistDetailsModuleHeaderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailsModuleHeaderContentView.swift; sourceTree = "<group>"; };
 		AEEE988981534462ADE6EF72 /* Pods-Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking.release.xcconfig"; path = "Pods/Target Support Files/Pods-Networking/Pods-Networking.release.xcconfig"; sourceTree = "<group>"; };
 		C8048DBDC5570CD503BB5D71 /* Pods-Services.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Services.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Services/Pods-Services.debug.xcconfig"; sourceTree = "<group>"; };
 		FD2D96C9BABF4F1AF4144366 /* Pods-GistsViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistsViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GistsViewer/Pods-GistsViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -229,6 +263,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A50B642622036D1F00F7B20F /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				A50B642722036D4800F7B20F /* File.swift */,
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		A512B66B2202020200BE3D3E /* GistDetailsModule */ = {
+			isa = PBXGroup;
+			children = (
+				A512B67122020A1300BE3D3E /* Views */,
+				A512B66C2202024200BE3D3E /* GistDetailsModule.swift */,
+				A512B66E220202A700BE3D3E /* GistDetailsModuleViewController.swift */,
+				A50B64242203660D00F7B20F /* GistDetailsModuleInteractorImpl.swift */,
+				A50B642B22036FEE00F7B20F /* GistDetailsModulePresenterImpl.swift */,
+				A50B642D2203717400F7B20F /* GistDetailsModuleRouterImpl.swift */,
+				A50B642F2203724900F7B20F /* GistDetailsModuleFactory.swift */,
+			);
+			path = GistDetailsModule;
+			sourceTree = "<group>";
+		};
+		A512B67122020A1300BE3D3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A512B67222020A3F00BE3D3E /* GistDetailsModuleFileCell.swift */,
+				A512B67422020A6300BE3D3E /* GistDetailsModuleCommitCell.swift */,
+				A59EC13A2204A8FC009D91AA /* GistDetailsModuleHeaderContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A512B676220211F000BE3D3E /* CommitsLoader */ = {
+			isa = PBXGroup;
+			children = (
+				A512B6772202120B00BE3D3E /* CommitsLoader.swift */,
+				A512B67D220219B700BE3D3E /* LoadCommitsOperation.swift */,
+			);
+			path = CommitsLoader;
+			sourceTree = "<group>";
+		};
 		A5854FB621FC2B930089B780 = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +347,7 @@
 		A585507221FC31770089B780 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A512B676220211F000BE3D3E /* CommitsLoader */,
 				A585511F21FE13AA0089B780 /* GistsLoader */,
 				A585511021FDAD140089B780 /* Util */,
 				A585510321FD93780089B780 /* Mappings */,
@@ -297,6 +373,7 @@
 		A58550A521FC31DF0089B780 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A50B642622036D1F00F7B20F /* ManagedObjects */,
 				A585510021FD90570089B780 /* ModelExtensions */,
 				A58550F821FCBBFF0089B780 /* Util */,
 				A5854FC921FC2B930089B780 /* GistsViewer.xcdatamodeld */,
@@ -325,6 +402,7 @@
 				A58550C121FC52F80089B780 /* Gist.swift */,
 				A58550C321FC53040089B780 /* File.swift */,
 				A58550C521FC53100089B780 /* Owner.swift */,
+				A512B6792202133F00BE3D3E /* Commit.swift */,
 			);
 			path = PlainObjects;
 			sourceTree = "<group>";
@@ -386,6 +464,8 @@
 				A585510821FDABA50089B780 /* Model+Managed.swift */,
 				A585510121FD90670089B780 /* Gist+Extensions.swift */,
 				A585510A21FDABE30089B780 /* Owner+Extensions.swift */,
+				A512B67F22021ADB00BE3D3E /* Commit+Extensions.swift */,
+				A50B642922036E1900F7B20F /* File+Extensions.swift */,
 			);
 			path = ModelExtensions;
 			sourceTree = "<group>";
@@ -396,6 +476,7 @@
 				A585510421FD938F0089B780 /* Gist+Mappings.swift */,
 				A585510C21FDACC90089B780 /* Owner+Mappings.swift */,
 				A585510E21FDACF20089B780 /* File+Mappings.swift */,
+				A512B67B2202153E00BE3D3E /* Commit+Mappings.swift */,
 			);
 			path = Mappings;
 			sourceTree = "<group>";
@@ -411,6 +492,7 @@
 		A585511321FDB9A10089B780 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				A50B6422220364D800F7B20F /* ChangeTracker.swift */,
 				A58550F121FC84E70089B780 /* FRCChangeTracker.swift */,
 				A585511821FDC6A00089B780 /* UIStoryboard+Extensions.swift */,
 			);
@@ -421,6 +503,7 @@
 			isa = PBXGroup;
 			children = (
 				A58550E321FC73FE0089B780 /* GistsModule */,
+				A512B66B2202020200BE3D3E /* GistDetailsModule */,
 				A585511B21FDDDC40089B780 /* Gists.storyboard */,
 			);
 			path = GistsComponent;
@@ -803,16 +886,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50B6423220364D800F7B20F /* ChangeTracker.swift in Sources */,
 				A585511721FDC6080089B780 /* GistsModuleFactory.swift in Sources */,
 				A58550E921FC74610089B780 /* GistsModuleInteractorImpl.swift in Sources */,
 				A58550EB21FC747B0089B780 /* GistsModuleRouterImpl.swift in Sources */,
+				A50B64252203660D00F7B20F /* GistDetailsModuleInteractorImpl.swift in Sources */,
+				A512B67322020A3F00BE3D3E /* GistDetailsModuleFileCell.swift in Sources */,
+				A50B642E2203717400F7B20F /* GistDetailsModuleRouterImpl.swift in Sources */,
 				A58550F521FCB3370089B780 /* GistsModuleDataSourceImpl.swift in Sources */,
+				A50B64302203724900F7B20F /* GistDetailsModuleFactory.swift in Sources */,
 				A58550E521FC74190089B780 /* GistsModuleViewController.swift in Sources */,
+				A512B66D2202024200BE3D3E /* GistDetailsModule.swift in Sources */,
 				A585511921FDC6A00089B780 /* UIStoryboard+Extensions.swift in Sources */,
 				A58550ED21FC74A20089B780 /* GistsModule.swift in Sources */,
+				A59EC13B2204A8FC009D91AA /* GistDetailsModuleHeaderContentView.swift in Sources */,
 				A58550E721FC743C0089B780 /* GistsModulePresenterImpl.swift in Sources */,
 				A58550F021FC7CB60089B780 /* GistsViewControllerTableViewCell.swift in Sources */,
+				A512B66F220202A700BE3D3E /* GistDetailsModuleViewController.swift in Sources */,
+				A50B642C22036FEE00F7B20F /* GistDetailsModulePresenterImpl.swift in Sources */,
 				A58550F221FC84E70089B780 /* FRCChangeTracker.swift in Sources */,
+				A512B67522020A6300BE3D3E /* GistDetailsModuleCommitCell.swift in Sources */,
 				A5854FC321FC2B930089B780 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -822,11 +915,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A585512121FE13C90089B780 /* LoadNewGistsOperation.swift in Sources */,
+				A512B6782202120B00BE3D3E /* CommitsLoader.swift in Sources */,
 				A585511221FDAD230089B780 /* TypeAliases.swift in Sources */,
 				A585510D21FDACC90089B780 /* Owner+Mappings.swift in Sources */,
+				A512B67C2202153E00BE3D3E /* Commit+Mappings.swift in Sources */,
 				A585510F21FDACF20089B780 /* File+Mappings.swift in Sources */,
 				A585510521FD938F0089B780 /* Gist+Mappings.swift in Sources */,
 				A58550CB21FC55590089B780 /* ServicesContainer.swift in Sources */,
+				A512B67E220219B700BE3D3E /* LoadCommitsOperation.swift in Sources */,
 				A58550F721FCB8A40089B780 /* GistsLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -835,6 +931,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A512B67A2202133F00BE3D3E /* Commit.swift in Sources */,
 				A58550BF21FC3F290089B780 /* NetworkService.swift in Sources */,
 				A58550C421FC53040089B780 /* File.swift in Sources */,
 				A58550B521FC356F0089B780 /* GistsAPI.swift in Sources */,
@@ -850,8 +947,11 @@
 				A58550E221FC582D0089B780 /* Bundle+Extensions.swift in Sources */,
 				A58550C921FC53A00089B780 /* NSPersistentContainer+Loading.swift in Sources */,
 				A585510221FD90670089B780 /* Gist+Extensions.swift in Sources */,
+				A512B68022021ADB00BE3D3E /* Commit+Extensions.swift in Sources */,
 				A585510721FDAB8C0089B780 /* Managed.swift in Sources */,
+				A50B642822036D4800F7B20F /* File.swift in Sources */,
 				A58550C721FC536D0089B780 /* GistsViewer.xcdatamodeld in Sources */,
+				A50B642A22036E1900F7B20F /* File+Extensions.swift in Sources */,
 				A58550FC21FCBD130089B780 /* NSManagedObjectContext+Extensions.swift in Sources */,
 				A585510921FDABA50089B780 /* Model+Managed.swift in Sources */,
 				A585510B21FDABE30089B780 /* Owner+Extensions.swift in Sources */,

@@ -35,7 +35,7 @@ class GistsModuleDataSourceImpl: GistsModuleDataSource {
         return changeTracker.fetchedResultsController.fetchedObjects?.count ?? 0
     }
     
-    var gistsBatchChangeHandler: ((FRCChangeTrackerTypes.FRCBatch<GistsModule.Gist>) -> ())? {
+    var gistsBatchChangeHandler: ((ChangeTracker<GistsModule.Gist>.Batch<GistsModule.Gist>) -> ())? {
         didSet {
             changeTracker.didChangeHandler = gistsBatchChangeHandler
         }

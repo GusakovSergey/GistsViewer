@@ -43,7 +43,7 @@ class GistsModuleViewController: UIViewController, GistsModuleView {
     
     //MARK: - Private
     
-    private func batchUpdateHandler(batch: FRCChangeTrackerTypes.FRCBatch<GistsModule.Gist>) {
+    private func batchUpdateHandler(batch: ChangeTracker<GistsModule.Gist>.Batch<GistsModule.Gist>) {
         tableView.processChangeTrackerBatch(batch,
                                             updateCellBlock: { (indexPath, gist) in
                                                 if let cell = tableView.cellForRow(at: indexPath) {

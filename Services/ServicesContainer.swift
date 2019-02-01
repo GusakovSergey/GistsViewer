@@ -10,7 +10,8 @@ import CoreData
 import Networking
 
 public class ServicesContainer {
-    public private(set) var gistsLoader: GistsLoader
+    public let gistsLoader: GistsLoader
+    public let commitsLoader: CommitsLoader
     public private(set) var mainContext: NSManagedObjectContext
     
     private let persistentContainer: NSPersistentContainer
@@ -27,6 +28,8 @@ public class ServicesContainer {
         let backgroundContext = persistentContainer.newBackgroundContext()
         self.gistsLoader = GistsLoader(networkService: networkService,
                                        context: backgroundContext)
+        self.commitsLoader = CommitsLoader(networkService: networkService,
+                                           context: backgroundContext)
 
     }
 }

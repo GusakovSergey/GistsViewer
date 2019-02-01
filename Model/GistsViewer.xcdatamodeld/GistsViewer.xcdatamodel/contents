@@ -7,9 +7,10 @@
         <attribute name="sha" attributeType="String" syncable="YES"/>
         <relationship name="gist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Gist" inverseName="commits" inverseEntity="Gist" syncable="YES"/>
     </entity>
-    <entity name="File" representedClassName=".File" syncable="YES" codeGenerationType="class">
+    <entity name="File" representedClassName=".File" syncable="YES" codeGenerationType="category">
         <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="contentURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="gist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Gist" inverseName="files" inverseEntity="Gist" syncable="YES"/>
     </entity>
@@ -34,7 +35,7 @@
     </entity>
     <elements>
         <element name="Commit" positionX="102.55859375" positionY="0.5546875" width="128" height="118"/>
-        <element name="File" positionX="104.9765625" positionY="141.93359375" width="128" height="103"/>
+        <element name="File" positionX="104.9765625" positionY="141.93359375" width="128" height="118"/>
         <element name="Gist" positionX="-188.625" positionY="67.3046875" width="128" height="133"/>
         <element name="Owner" positionX="-447.52734375" positionY="67.00390625" width="128" height="103"/>
     </elements>

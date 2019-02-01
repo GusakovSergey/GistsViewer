@@ -10,12 +10,15 @@ import Alamofire
 
 public enum GistsAPI: URLRequestConvertible {
     case gists
+    case commits(gistId: String)
     
     private static let baseURLString = "https://api.github.com"
     
     private var method: HTTPMethod {
         switch self {
         case .gists:
+            return .get
+        case .commits:
             return .get
         }
     }
@@ -24,12 +27,16 @@ public enum GistsAPI: URLRequestConvertible {
         switch self {
         case .gists:
             return "/gists/public"
+        case .commits(gistId: let gistId):
+            return "/gists/\(gistId)/commits"
         }
     }
     
     private var parameters: Parameters? {
         switch self {
         case .gists:
+            return ["per_page" : 100]
+        case .commits:
             return ["per_page" : 100]
         }
     }
@@ -41,7 +48,7 @@ public enum GistsAPI: URLRequestConvertible {
         urlRequest.httpMethod = method.rawValue
         
         switch self {
-        case .gists:
+        case .gists, .commits:
             urlRequest = try URLEncoding.default.encode(urlRequest, with: parameters)
         }
         

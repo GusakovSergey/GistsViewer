@@ -30,6 +30,7 @@ class LoadNewGistsOperation: AsyncOperation {
                                 self.context.performAndWait {
                                     self.parse(gists: gists)
                                     self.context.safeSave()
+                                    self.context.refreshAllObjects()
                                 }
                                 self.state = .finished
                                 
