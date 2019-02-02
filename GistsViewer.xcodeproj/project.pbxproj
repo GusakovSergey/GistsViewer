@@ -93,6 +93,7 @@
 		A59EC15A2205BA04009D91AA /* OwnersGistsModuleGistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1592205BA04009D91AA /* OwnersGistsModuleGistTableViewCell.swift */; };
 		A59EC15C2205BFE3009D91AA /* OwnersGistsModuleRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC15B2205BFE3009D91AA /* OwnersGistsModuleRouterImpl.swift */; };
 		A59EC15E2205C07D009D91AA /* OwnersGistsModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC15D2205C07D009D91AA /* OwnersGistsModuleFactory.swift */; };
+		A59EC1602205D890009D91AA /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC15F2205D890009D91AA /* UIViewController+Extensions.swift */; };
 		DA73E6D0658FD8FAAA428ECB /* Pods_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9431ADA971DDE3596CFC76 /* Pods_Networking.framework */; };
 /* End PBXBuildFile section */
 
@@ -236,6 +237,7 @@
 		A59EC1592205BA04009D91AA /* OwnersGistsModuleGistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersGistsModuleGistTableViewCell.swift; sourceTree = "<group>"; };
 		A59EC15B2205BFE3009D91AA /* OwnersGistsModuleRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersGistsModuleRouterImpl.swift; sourceTree = "<group>"; };
 		A59EC15D2205C07D009D91AA /* OwnersGistsModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersGistsModuleFactory.swift; sourceTree = "<group>"; };
+		A59EC15F2205D890009D91AA /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		AEEE988981534462ADE6EF72 /* Pods-Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking.release.xcconfig"; path = "Pods/Target Support Files/Pods-Networking/Pods-Networking.release.xcconfig"; sourceTree = "<group>"; };
 		C8048DBDC5570CD503BB5D71 /* Pods-Services.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Services.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Services/Pods-Services.debug.xcconfig"; sourceTree = "<group>"; };
 		FD2D96C9BABF4F1AF4144366 /* Pods-GistsViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistsViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GistsViewer/Pods-GistsViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -517,6 +519,7 @@
 				A58550F121FC84E70089B780 /* FRCChangeTracker.swift */,
 				A585511821FDC6A00089B780 /* UIStoryboard+Extensions.swift */,
 				A59EC14822059127009D91AA /* ChangeTrackerBasedDataSource.swift */,
+				A59EC15F2205D890009D91AA /* UIViewController+Extensions.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -969,6 +972,7 @@
 				A50B642E2203717400F7B20F /* GistDetailsModuleRouterImpl.swift in Sources */,
 				A50B64302203724900F7B20F /* GistDetailsModuleFactory.swift in Sources */,
 				A59EC15C2205BFE3009D91AA /* OwnersGistsModuleRouterImpl.swift in Sources */,
+				A59EC1602205D890009D91AA /* UIViewController+Extensions.swift in Sources */,
 				A58550E521FC74190089B780 /* GistsModuleViewController.swift in Sources */,
 				A512B66D2202024200BE3D3E /* GistDetailsModule.swift in Sources */,
 				A59EC15E2205C07D009D91AA /* OwnersGistsModuleFactory.swift in Sources */,

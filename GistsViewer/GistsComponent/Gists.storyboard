@@ -413,19 +413,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="swU-1M-R4H">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hgM-mG-9yg">
                                 <rect key="frame" x="197" y="358" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="swU-1M-R4H" firstAttribute="leading" secondItem="Q8k-Dp-FvW" secondAttribute="leading" id="Dd9-a6-Exo"/>
+                            <constraint firstItem="Q8k-Dp-FvW" firstAttribute="trailing" secondItem="swU-1M-R4H" secondAttribute="trailing" id="ZqG-Q6-n3u"/>
+                            <constraint firstItem="swU-1M-R4H" firstAttribute="top" secondItem="Q8k-Dp-FvW" secondAttribute="top" id="bc0-II-be9"/>
                             <constraint firstItem="hgM-mG-9yg" firstAttribute="centerX" secondItem="v6b-Ft-LsC" secondAttribute="centerX" id="ecA-KU-eCy"/>
                             <constraint firstItem="hgM-mG-9yg" firstAttribute="centerY" secondItem="v6b-Ft-LsC" secondAttribute="centerY" id="kSJ-Nl-Woo"/>
+                            <constraint firstItem="Q8k-Dp-FvW" firstAttribute="bottom" secondItem="swU-1M-R4H" secondAttribute="bottom" id="ssw-Cg-Uwo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q8k-Dp-FvW"/>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="hgM-mG-9yg" id="Whb-n5-0gI"/>
+                        <outlet property="textView" destination="swU-1M-R4H" id="i3h-EC-fVe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBa-vv-cS2" userLabel="First Responder" sceneMemberID="firstResponder"/>

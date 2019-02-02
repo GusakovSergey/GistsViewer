@@ -7,14 +7,25 @@
 
 import Foundation
 
+class FileDetailsModule {
+    private init() {}
+    
+    enum LoadFileResult {
+        case string(String)
+        case error(Error)
+    }
+}
+
 protocol FileDetailsModuleInteractor {
-    var fileURL: URL? { get }
     var fileName: String? { get }
+    
+    func loadFile(completion: @escaping (FileDetailsModule.LoadFileResult)->())
 }
 
 protocol FileDetailsModulePresenter {
-    var fileURL: URL? { get }
     var fileName: String? { get }
+    
+    func loadFile(completion: @escaping (FileDetailsModule.LoadFileResult)->())
 }
 
 protocol FileDetailsModuleView { }

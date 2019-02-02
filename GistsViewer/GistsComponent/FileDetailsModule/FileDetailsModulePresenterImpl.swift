@@ -14,11 +14,12 @@ class FileDetailsModulePresenterImpl: FileDetailsModulePresenter {
         self.interactor = interactor
     }
     
-    var fileURL: URL? {
-        return interactor.fileURL
-    }
-    
+    //MARK: - FileDetailsModulePresenter
     var fileName: String? {
         return interactor.fileName
+    }
+    
+    func loadFile(completion: @escaping (FileDetailsModule.LoadFileResult) -> ()) {
+        interactor.loadFile(completion: completion)
     }
 }
