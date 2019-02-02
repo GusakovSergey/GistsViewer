@@ -527,7 +527,6 @@
 		A585511A21FDDD860089B780 /* GistsComponent */ = {
 			isa = PBXGroup;
 			children = (
-				A59EC1552205B741009D91AA /* Shared */,
 				A58550E321FC73FE0089B780 /* GistsModule */,
 				A59EC14E2205B0A8009D91AA /* OwnersGistsModule */,
 				A512B66B2202020200BE3D3E /* GistDetailsModule */,
@@ -570,13 +569,6 @@
 				A59EC15D2205C07D009D91AA /* OwnersGistsModuleFactory.swift */,
 			);
 			path = OwnersGistsModule;
-			sourceTree = "<group>";
-		};
-		A59EC1552205B741009D91AA /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		A59EC1582205B9EE009D91AA /* Views */ = {
