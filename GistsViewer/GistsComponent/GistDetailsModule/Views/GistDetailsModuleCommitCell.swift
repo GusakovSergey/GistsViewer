@@ -12,3 +12,13 @@ class GistDetailsModuleCommitCell: UITableViewCell {
     @IBOutlet weak var additionsLabel: UILabel!
     @IBOutlet weak var deletionsLabel: UILabel!
 }
+
+extension GistDetailsModuleCommitCell: ConfigurableByModelCell {
+    typealias Model = GistDetailsModule.Commit
+    
+    func configureWith(model: GistDetailsModule.Commit) {
+        shaLabel.text = model.sha
+        additionsLabel.text = "+ \(model.additions)"
+        deletionsLabel.text = "- \(model.deletions)"
+    }
+}

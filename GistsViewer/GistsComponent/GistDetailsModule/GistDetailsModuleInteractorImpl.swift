@@ -45,7 +45,6 @@ class GistDetailsModuleInteractorImpl: GistDetailsModuleInteractor {
                                              managedObjectContext: context,
                                              sectionNameKeyPath: nil,
                                              cacheName: "GistDetailsModule_files_\(gistId)")
-        try! frc.performFetch()
         
         return FRCChangeTracker(fetchedResultsController: frc,
                                 cast: { GistDetailsModule.File(fileName: $0.name,
@@ -60,7 +59,6 @@ class GistDetailsModuleInteractorImpl: GistDetailsModuleInteractor {
                                              managedObjectContext: context,
                                              sectionNameKeyPath: nil,
                                              cacheName: "GistDetailsModule_commits_\(gistId)")
-        try! frc.performFetch()
         
         return FRCChangeTracker(fetchedResultsController: frc,
                                 cast: { GistDetailsModule.Commit(sha: $0.sha,
