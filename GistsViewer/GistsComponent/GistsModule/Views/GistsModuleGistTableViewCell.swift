@@ -8,12 +8,12 @@
 import UIKit
 import Nuke
 
-class GistsViewControllerTableViewCell: UITableViewCell {
+class GistsModuleGistTableViewCell: UITableViewCell {
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var gistNameLabel: UILabel!
     @IBOutlet weak var gistOwnerLabel: UILabel!
     
-    private var loadImageTask: ImageTask?
+    private weak var loadImageTask: ImageTask?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,7 +27,7 @@ class GistsViewControllerTableViewCell: UITableViewCell {
     }
 }
 
-extension GistsViewControllerTableViewCell: ConfigurableByModelCell {
+extension GistsModuleGistTableViewCell: ConfigurableByModelCell {
     typealias Model = GistsModule.Gist
     
     func configureWith(model: GistsModule.Gist) {

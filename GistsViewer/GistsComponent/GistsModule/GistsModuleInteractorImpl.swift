@@ -22,7 +22,7 @@ class GistsModuleInteractorImpl: GistsInteractor {
     }
     
     //MARK: - GistsInteractor    
-    func constructChangeTracker() -> ChangeTracker<GistsModule.Gist> {
+    func constructGistsChangeTracker() -> ChangeTracker<GistsModule.Gist> {
         let fetchRequest: NSFetchRequest<Gist> = Gist.fetchRequest()
         fetchRequest.sortDescriptors = [Gist.updatedAtAttribute.descending()]
         let frc = NSFetchedResultsController(fetchRequest: fetchRequest,
@@ -35,6 +35,21 @@ class GistsModuleInteractorImpl: GistsInteractor {
                                                          ownerName: $0.owner?.name,
                                                          ownerAvatarURL: $0.owner?.avatarURL,
                                                          gistName: $0.name) })
+    }
+    
+    func constructOwnersChangeTracker() -> ChangeTracker<GistsModule.Owner> {
+        let fetchRequest: NSFetchRequest<Owner> = Owner.fetchRequest()
+        fetchRequest.sortDescriptors = [Owner.gistsCountAttribute.descending()]
+        
+        let frc = NSFetchedResultsController(fetchRequest: fetchRequest,
+                                             managedObjectContext: context,
+                                             sectionNameKeyPath: nil,
+                                             cacheName: nil)
+        
+        return FRCChangeTracker(fetchedResultsController: frc,
+                                cast: { GistsModule.Owner(id: $0.id,
+                                                          name: $0.name,
+                                                          avatarURL: $0.avatarURL) })
     }
 
     func loadNewGists(completion: @escaping (Error?) -> ()) {

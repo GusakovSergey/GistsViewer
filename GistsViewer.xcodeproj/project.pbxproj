@@ -59,9 +59,8 @@
 		A58550E921FC74610089B780 /* GistsModuleInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550E821FC74610089B780 /* GistsModuleInteractorImpl.swift */; };
 		A58550EB21FC747B0089B780 /* GistsModuleRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550EA21FC747B0089B780 /* GistsModuleRouterImpl.swift */; };
 		A58550ED21FC74A20089B780 /* GistsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550EC21FC74A20089B780 /* GistsModule.swift */; };
-		A58550F021FC7CB60089B780 /* GistsViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550EF21FC7CB60089B780 /* GistsViewControllerTableViewCell.swift */; };
+		A58550F021FC7CB60089B780 /* GistsModuleGistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550EF21FC7CB60089B780 /* GistsModuleGistTableViewCell.swift */; };
 		A58550F221FC84E70089B780 /* FRCChangeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550F121FC84E70089B780 /* FRCChangeTracker.swift */; };
-		A58550F521FCB3370089B780 /* GistsModuleDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550F421FCB3370089B780 /* GistsModuleDataSourceImpl.swift */; };
 		A58550F721FCB8A40089B780 /* GistsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550F621FCB8A40089B780 /* GistsLoader.swift */; };
 		A58550FC21FCBD130089B780 /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550FB21FCBD130089B780 /* NSManagedObjectContext+Extensions.swift */; };
 		A58550FE21FCC4C70089B780 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550FD21FCC4C70089B780 /* AsyncOperation.swift */; };
@@ -85,6 +84,15 @@
 		A59EC1442204AF3B009D91AA /* FileDetailsModuleInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1432204AF3B009D91AA /* FileDetailsModuleInteractorImpl.swift */; };
 		A59EC1462204B021009D91AA /* FileDetailsModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1452204B021009D91AA /* FileDetailsModuleFactory.swift */; };
 		A59EC14922059127009D91AA /* ChangeTrackerBasedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC14822059127009D91AA /* ChangeTrackerBasedDataSource.swift */; };
+		A59EC14B22059C19009D91AA /* GistsModuleOwnerCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC14A22059C19009D91AA /* GistsModuleOwnerCollectionCell.swift */; };
+		A59EC14D2205A408009D91AA /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC14C2205A408009D91AA /* Owner.swift */; };
+		A59EC1502205B0C1009D91AA /* OwnersGistsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC14F2205B0C1009D91AA /* OwnersGistsModule.swift */; };
+		A59EC1522205B2FC009D91AA /* OwnersGistsModuleInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1512205B2FC009D91AA /* OwnersGistsModuleInteractorImpl.swift */; };
+		A59EC1542205B404009D91AA /* OwnersGistsModulePresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1532205B404009D91AA /* OwnersGistsModulePresenterImpl.swift */; };
+		A59EC1572205B764009D91AA /* OwnersGistsModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1562205B764009D91AA /* OwnersGistsModuleViewController.swift */; };
+		A59EC15A2205BA04009D91AA /* OwnersGistsModuleGistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1592205BA04009D91AA /* OwnersGistsModuleGistTableViewCell.swift */; };
+		A59EC15C2205BFE3009D91AA /* OwnersGistsModuleRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC15B2205BFE3009D91AA /* OwnersGistsModuleRouterImpl.swift */; };
+		A59EC15E2205C07D009D91AA /* OwnersGistsModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC15D2205C07D009D91AA /* OwnersGistsModuleFactory.swift */; };
 		DA73E6D0658FD8FAAA428ECB /* Pods_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9431ADA971DDE3596CFC76 /* Pods_Networking.framework */; };
 /* End PBXBuildFile section */
 
@@ -195,9 +203,8 @@
 		A58550E821FC74610089B780 /* GistsModuleInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModuleInteractorImpl.swift; sourceTree = "<group>"; };
 		A58550EA21FC747B0089B780 /* GistsModuleRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModuleRouterImpl.swift; sourceTree = "<group>"; };
 		A58550EC21FC74A20089B780 /* GistsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModule.swift; sourceTree = "<group>"; };
-		A58550EF21FC7CB60089B780 /* GistsViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		A58550EF21FC7CB60089B780 /* GistsModuleGistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModuleGistTableViewCell.swift; sourceTree = "<group>"; };
 		A58550F121FC84E70089B780 /* FRCChangeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRCChangeTracker.swift; sourceTree = "<group>"; };
-		A58550F421FCB3370089B780 /* GistsModuleDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModuleDataSourceImpl.swift; sourceTree = "<group>"; };
 		A58550F621FCB8A40089B780 /* GistsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsLoader.swift; sourceTree = "<group>"; };
 		A58550FB21FCBD130089B780 /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
 		A58550FD21FCC4C70089B780 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
@@ -220,6 +227,15 @@
 		A59EC1432204AF3B009D91AA /* FileDetailsModuleInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailsModuleInteractorImpl.swift; sourceTree = "<group>"; };
 		A59EC1452204B021009D91AA /* FileDetailsModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailsModuleFactory.swift; sourceTree = "<group>"; };
 		A59EC14822059127009D91AA /* ChangeTrackerBasedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeTrackerBasedDataSource.swift; sourceTree = "<group>"; };
+		A59EC14A22059C19009D91AA /* GistsModuleOwnerCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModuleOwnerCollectionCell.swift; sourceTree = "<group>"; };
+		A59EC14C2205A408009D91AA /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		A59EC14F2205B0C1009D91AA /* OwnersGistsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersGistsModule.swift; sourceTree = "<group>"; };
+		A59EC1512205B2FC009D91AA /* OwnersGistsModuleInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersGistsModuleInteractorImpl.swift; sourceTree = "<group>"; };
+		A59EC1532205B404009D91AA /* OwnersGistsModulePresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersGistsModulePresenterImpl.swift; sourceTree = "<group>"; };
+		A59EC1562205B764009D91AA /* OwnersGistsModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersGistsModuleViewController.swift; sourceTree = "<group>"; };
+		A59EC1592205BA04009D91AA /* OwnersGistsModuleGistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersGistsModuleGistTableViewCell.swift; sourceTree = "<group>"; };
+		A59EC15B2205BFE3009D91AA /* OwnersGistsModuleRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersGistsModuleRouterImpl.swift; sourceTree = "<group>"; };
+		A59EC15D2205C07D009D91AA /* OwnersGistsModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersGistsModuleFactory.swift; sourceTree = "<group>"; };
 		AEEE988981534462ADE6EF72 /* Pods-Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking.release.xcconfig"; path = "Pods/Target Support Files/Pods-Networking/Pods-Networking.release.xcconfig"; sourceTree = "<group>"; };
 		C8048DBDC5570CD503BB5D71 /* Pods-Services.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Services.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Services/Pods-Services.debug.xcconfig"; sourceTree = "<group>"; };
 		FD2D96C9BABF4F1AF4144366 /* Pods-GistsViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistsViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GistsViewer/Pods-GistsViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -279,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				A50B642722036D4800F7B20F /* File.swift */,
+				A59EC14C2205A408009D91AA /* Owner.swift */,
 			);
 			path = ManagedObjects;
 			sourceTree = "<group>";
@@ -433,7 +450,6 @@
 		A58550E321FC73FE0089B780 /* GistsModule */ = {
 			isa = PBXGroup;
 			children = (
-				A58550F321FCB3260089B780 /* Helpers */,
 				A58550EE21FC7C930089B780 /* Views */,
 				A58550EC21FC74A20089B780 /* GistsModule.swift */,
 				A58550E421FC74190089B780 /* GistsModuleViewController.swift */,
@@ -448,17 +464,10 @@
 		A58550EE21FC7C930089B780 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A58550EF21FC7CB60089B780 /* GistsViewControllerTableViewCell.swift */,
+				A58550EF21FC7CB60089B780 /* GistsModuleGistTableViewCell.swift */,
+				A59EC14A22059C19009D91AA /* GistsModuleOwnerCollectionCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		A58550F321FCB3260089B780 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				A58550F421FCB3370089B780 /* GistsModuleDataSourceImpl.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		A58550F821FCBBFF0089B780 /* Util */ = {
@@ -515,7 +524,9 @@
 		A585511A21FDDD860089B780 /* GistsComponent */ = {
 			isa = PBXGroup;
 			children = (
+				A59EC1552205B741009D91AA /* Shared */,
 				A58550E321FC73FE0089B780 /* GistsModule */,
+				A59EC14E2205B0A8009D91AA /* OwnersGistsModule */,
 				A512B66B2202020200BE3D3E /* GistDetailsModule */,
 				A59EC13C2204AB28009D91AA /* FileDetailsModule */,
 				A585511B21FDDDC40089B780 /* Gists.storyboard */,
@@ -542,6 +553,35 @@
 				A59EC1452204B021009D91AA /* FileDetailsModuleFactory.swift */,
 			);
 			path = FileDetailsModule;
+			sourceTree = "<group>";
+		};
+		A59EC14E2205B0A8009D91AA /* OwnersGistsModule */ = {
+			isa = PBXGroup;
+			children = (
+				A59EC1582205B9EE009D91AA /* Views */,
+				A59EC14F2205B0C1009D91AA /* OwnersGistsModule.swift */,
+				A59EC1512205B2FC009D91AA /* OwnersGistsModuleInteractorImpl.swift */,
+				A59EC1532205B404009D91AA /* OwnersGistsModulePresenterImpl.swift */,
+				A59EC1562205B764009D91AA /* OwnersGistsModuleViewController.swift */,
+				A59EC15B2205BFE3009D91AA /* OwnersGistsModuleRouterImpl.swift */,
+				A59EC15D2205C07D009D91AA /* OwnersGistsModuleFactory.swift */,
+			);
+			path = OwnersGistsModule;
+			sourceTree = "<group>";
+		};
+		A59EC1552205B741009D91AA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A59EC1582205B9EE009D91AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A59EC1592205BA04009D91AA /* OwnersGistsModuleGistTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		C3A06C5055E1AF30A643606F /* Pods */ = {
@@ -912,27 +952,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59EC1502205B0C1009D91AA /* OwnersGistsModule.swift in Sources */,
+				A59EC14B22059C19009D91AA /* GistsModuleOwnerCollectionCell.swift in Sources */,
 				A50B6423220364D800F7B20F /* ChangeTracker.swift in Sources */,
+				A59EC1542205B404009D91AA /* OwnersGistsModulePresenterImpl.swift in Sources */,
+				A59EC1572205B764009D91AA /* OwnersGistsModuleViewController.swift in Sources */,
 				A585511721FDC6080089B780 /* GistsModuleFactory.swift in Sources */,
 				A58550E921FC74610089B780 /* GistsModuleInteractorImpl.swift in Sources */,
 				A58550EB21FC747B0089B780 /* GistsModuleRouterImpl.swift in Sources */,
 				A59EC13E2204ABBB009D91AA /* FileDetailsModule.swift in Sources */,
 				A59EC1442204AF3B009D91AA /* FileDetailsModuleInteractorImpl.swift in Sources */,
 				A59EC1422204AEF8009D91AA /* FileDetailsModulePresenterImpl.swift in Sources */,
+				A59EC15A2205BA04009D91AA /* OwnersGistsModuleGistTableViewCell.swift in Sources */,
 				A50B64252203660D00F7B20F /* GistDetailsModuleInteractorImpl.swift in Sources */,
 				A512B67322020A3F00BE3D3E /* GistDetailsModuleFileCell.swift in Sources */,
 				A50B642E2203717400F7B20F /* GistDetailsModuleRouterImpl.swift in Sources */,
-				A58550F521FCB3370089B780 /* GistsModuleDataSourceImpl.swift in Sources */,
 				A50B64302203724900F7B20F /* GistDetailsModuleFactory.swift in Sources */,
+				A59EC15C2205BFE3009D91AA /* OwnersGistsModuleRouterImpl.swift in Sources */,
 				A58550E521FC74190089B780 /* GistsModuleViewController.swift in Sources */,
 				A512B66D2202024200BE3D3E /* GistDetailsModule.swift in Sources */,
+				A59EC15E2205C07D009D91AA /* OwnersGistsModuleFactory.swift in Sources */,
 				A585511921FDC6A00089B780 /* UIStoryboard+Extensions.swift in Sources */,
 				A58550ED21FC74A20089B780 /* GistsModule.swift in Sources */,
 				A59EC1402204ADB4009D91AA /* FileDetailsModuleViewController.swift in Sources */,
 				A59EC13B2204A8FC009D91AA /* GistDetailsModuleHeaderContentView.swift in Sources */,
 				A58550E721FC743C0089B780 /* GistsModulePresenterImpl.swift in Sources */,
+				A59EC1522205B2FC009D91AA /* OwnersGistsModuleInteractorImpl.swift in Sources */,
 				A59EC1462204B021009D91AA /* FileDetailsModuleFactory.swift in Sources */,
-				A58550F021FC7CB60089B780 /* GistsViewControllerTableViewCell.swift in Sources */,
+				A58550F021FC7CB60089B780 /* GistsModuleGistTableViewCell.swift in Sources */,
 				A512B66F220202A700BE3D3E /* GistDetailsModuleViewController.swift in Sources */,
 				A50B642C22036FEE00F7B20F /* GistDetailsModulePresenterImpl.swift in Sources */,
 				A59EC14922059127009D91AA /* ChangeTrackerBasedDataSource.swift in Sources */,
@@ -977,6 +1024,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A58550E221FC582D0089B780 /* Bundle+Extensions.swift in Sources */,
+				A59EC14D2205A408009D91AA /* Owner.swift in Sources */,
 				A58550C921FC53A00089B780 /* NSPersistentContainer+Loading.swift in Sources */,
 				A585510221FD90670089B780 /* Gist+Extensions.swift in Sources */,
 				A512B68022021ADB00BE3D3E /* Commit+Extensions.swift in Sources */,

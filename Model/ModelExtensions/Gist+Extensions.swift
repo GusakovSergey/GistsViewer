@@ -9,8 +9,9 @@ import Foundation
 import QueryKit
 
 extension Gist {
-    public static var idAttribute:Attribute<String> { return Attribute(#keyPath(Gist.id)) }
+    public static var idAttribute: Attribute<String> { return Attribute(#keyPath(Gist.id)) }
     public static var updatedAtAttribute: Attribute<TimeInterval> { return Attribute(#keyPath(Gist.updatedAt))}
+    public static var ownerAttribute: Attribute<Owner> { return Attribute(#keyPath(Gist.owner)) }
 }
 
 extension Attribute where AttributeType: Gist {
@@ -33,5 +34,9 @@ extension Gist {
     
     public static func predicateForGistWith(id: String) -> NSPredicate {
         return Gist.idAttribute == id
+    }
+    
+    public static func predicateBy(ownerId: Int64) -> NSPredicate {
+        return Gist.ownerAttribute.idAttribute == ownerId
     }
 }

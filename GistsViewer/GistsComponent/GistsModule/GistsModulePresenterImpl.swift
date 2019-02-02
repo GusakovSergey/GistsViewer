@@ -17,13 +17,22 @@ class GistsModulePresenterImpl: GistsModulePresenter {
     }
     
     //MARK: - GistsPresenter
-    func constructChangeTracker() -> ChangeTracker<GistsModule.Gist> {
-        return interactor.constructChangeTracker()
+    
+    func showOwnersGists(owner: GistsModule.Owner) {
+        router.showOwnersGists(ownerId: owner.id)
     }
     
     func showDetailsFor(gist: GistsModule.Gist) {
         guard let id = gist.id else { return }
         router.showGistDetails(gistId: id)
+    }
+    
+    func constructGistsChangeTracker() -> ChangeTracker<GistsModule.Gist> {
+        return interactor.constructGistsChangeTracker()
+    }
+    
+    func constructOwnersChangeTracker() -> ChangeTracker<GistsModule.Owner> {
+        return interactor.constructOwnersChangeTracker()
     }
     
     func loadNewGists(completion: @escaping (Error?) -> ()) {

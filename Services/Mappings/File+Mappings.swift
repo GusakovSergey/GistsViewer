@@ -15,7 +15,6 @@ extension CoreDataFile {
     @discardableResult
     static func insertToContext(context: NSManagedObjectContext, webFile: WebFile) -> CoreDataFile {
         let newFile = CoreDataFile(context: context)
-        newFile.content = nil
         newFile.name = webFile.filename
         newFile.contentURL = webFile.raw_url
         return newFile

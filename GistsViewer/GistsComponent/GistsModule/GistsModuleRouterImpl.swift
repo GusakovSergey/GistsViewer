@@ -30,4 +30,17 @@ class GistsModuleRouterImpl: GistsRouter {
         
         navVC.pushViewController(gistDetailsVC, animated: true)
     }
+    
+    func showOwnersGists(ownerId: Int64) {
+        guard let navVC = navigationController else {
+            assertionFailure("navVC was lost")
+            return
+        }
+        
+        let ownersGistsVC = OwnersGistsModuleFactory.ownersGistsViewController(ownerId: ownerId,
+                                                                               servicesContainer: servicesContainer,
+                                                                               navigationController: navVC)
+        
+        navVC.pushViewController(ownersGistsVC, animated: true)
+    }
 }

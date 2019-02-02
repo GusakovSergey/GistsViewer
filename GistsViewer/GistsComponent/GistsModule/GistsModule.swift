@@ -23,14 +23,28 @@ struct GistsModule {
             self.gistName = gistName
         }
     }
+    
+    struct Owner {
+        let id: Int64
+        let name: String?
+        let avatarURL: String?
+        
+        init(id: Int64, name: String?, avatarURL: String?) {
+            self.id = id
+            self.name = name
+            self.avatarURL = avatarURL
+        }
+    }
 }
 
 protocol GistsRouter {
     func showGistDetails(gistId: String)
+    func showOwnersGists(ownerId: Int64)
 }
 
 protocol GistsInteractor {
-    func constructChangeTracker() -> ChangeTracker<GistsModule.Gist>
+    func constructGistsChangeTracker() -> ChangeTracker<GistsModule.Gist>
+    func constructOwnersChangeTracker() -> ChangeTracker<GistsModule.Owner>
     
     func loadNewGists(completion: @escaping (Error?)->())
 }
@@ -41,14 +55,9 @@ protocol GistsModuleView: class {
 
 protocol GistsModulePresenter {
     func showDetailsFor(gist: GistsModule.Gist)
-    func constructChangeTracker() -> ChangeTracker<GistsModule.Gist>
-    func loadNewGists(completion: @escaping (Error?)->())
-}
-
-protocol GistsModuleDataSource {
-    var gistsCount: Int { get }
-    var gistsBatchChangeHandler: ((ChangeTracker<GistsModule.Gist>.Batch<GistsModule.Gist>)->())? { get set }
+    func showOwnersGists(owner: GistsModule.Owner)
     
-    func performFetch()
-    func gistFor(indexPath: IndexPath) -> GistsModule.Gist
+    func constructGistsChangeTracker() -> ChangeTracker<GistsModule.Gist>
+    func constructOwnersChangeTracker() -> ChangeTracker<GistsModule.Owner>
+    func loadNewGists(completion: @escaping (Error?)->())
 }
