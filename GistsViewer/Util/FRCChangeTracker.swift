@@ -25,6 +25,7 @@ class FRCChangeTracker<T: NSManagedObject, U>: ChangeTracker<U>, NSFetchedResult
         super.init()
         
         fetchedResultsController.delegate = self
+        try? fetchedResultsController.performFetch()
     }
     
     //MARK: - ChangeTracker

@@ -84,6 +84,7 @@
 		A59EC1422204AEF8009D91AA /* FileDetailsModulePresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1412204AEF8009D91AA /* FileDetailsModulePresenterImpl.swift */; };
 		A59EC1442204AF3B009D91AA /* FileDetailsModuleInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1432204AF3B009D91AA /* FileDetailsModuleInteractorImpl.swift */; };
 		A59EC1462204B021009D91AA /* FileDetailsModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1452204B021009D91AA /* FileDetailsModuleFactory.swift */; };
+		A59EC14922059127009D91AA /* ChangeTrackerBasedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC14822059127009D91AA /* ChangeTrackerBasedDataSource.swift */; };
 		DA73E6D0658FD8FAAA428ECB /* Pods_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9431ADA971DDE3596CFC76 /* Pods_Networking.framework */; };
 /* End PBXBuildFile section */
 
@@ -218,6 +219,7 @@
 		A59EC1412204AEF8009D91AA /* FileDetailsModulePresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailsModulePresenterImpl.swift; sourceTree = "<group>"; };
 		A59EC1432204AF3B009D91AA /* FileDetailsModuleInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailsModuleInteractorImpl.swift; sourceTree = "<group>"; };
 		A59EC1452204B021009D91AA /* FileDetailsModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailsModuleFactory.swift; sourceTree = "<group>"; };
+		A59EC14822059127009D91AA /* ChangeTrackerBasedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeTrackerBasedDataSource.swift; sourceTree = "<group>"; };
 		AEEE988981534462ADE6EF72 /* Pods-Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking.release.xcconfig"; path = "Pods/Target Support Files/Pods-Networking/Pods-Networking.release.xcconfig"; sourceTree = "<group>"; };
 		C8048DBDC5570CD503BB5D71 /* Pods-Services.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Services.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Services/Pods-Services.debug.xcconfig"; sourceTree = "<group>"; };
 		FD2D96C9BABF4F1AF4144366 /* Pods-GistsViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistsViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GistsViewer/Pods-GistsViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -505,6 +507,7 @@
 				A50B6422220364D800F7B20F /* ChangeTracker.swift */,
 				A58550F121FC84E70089B780 /* FRCChangeTracker.swift */,
 				A585511821FDC6A00089B780 /* UIStoryboard+Extensions.swift */,
+				A59EC14822059127009D91AA /* ChangeTrackerBasedDataSource.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -932,6 +935,7 @@
 				A58550F021FC7CB60089B780 /* GistsViewControllerTableViewCell.swift in Sources */,
 				A512B66F220202A700BE3D3E /* GistDetailsModuleViewController.swift in Sources */,
 				A50B642C22036FEE00F7B20F /* GistDetailsModulePresenterImpl.swift in Sources */,
+				A59EC14922059127009D91AA /* ChangeTrackerBasedDataSource.swift in Sources */,
 				A58550F221FC84E70089B780 /* FRCChangeTracker.swift in Sources */,
 				A512B67522020A6300BE3D3E /* GistDetailsModuleCommitCell.swift in Sources */,
 				A5854FC321FC2B930089B780 /* AppDelegate.swift in Sources */,

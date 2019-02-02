@@ -16,7 +16,7 @@ class GistsModuleViewController: UIViewController, GistsModuleView {
     
     var presenter: GistsModulePresenter!
     
-    private lazy var gistsDataSource = presenter.gsistsDataSource
+    private var tableViewDataSource: ChangeTrackerBasedDataSource<GistsViewControllerTableViewCell>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +25,11 @@ class GistsModuleViewController: UIViewController, GistsModuleView {
         
         refreshControll.addTarget(self, action: #selector(refreshGists), for: .valueChanged)
         
-        gistsDataSource.gistsBatchChangeHandler = self.batchUpdateHandler
+        tableViewDataSource = ChangeTrackerBasedDataSource<GistsViewControllerTableViewCell>(changeTracker: presenter.constructChangeTracker(),
+                                                                                             tableView: tableView,
+                                                                                             cellReuseIdentifier: "cell")
+        tableView.dataSource = tableViewDataSource
         
-        presenter.didTriggerViewLoadEvent()
         presenter.loadNewGists(completion: { [weak self] (_) in
             guard let self = self else {return}
             self.tableView.refreshControl = self.refreshControll
@@ -66,24 +68,7 @@ class GistsModuleViewController: UIViewController, GistsModuleView {
 
 extension GistsModuleViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter.showDetailsFor(gist: gistsDataSource.gistFor(indexPath: indexPath))
+        presenter.showDetailsFor(gist: tableViewDataSource.changeTracker.modelFor(indexPath: indexPath))
         tableView.deselectRow(at: indexPath, animated: true)
-    }
-}
-
-extension GistsModuleViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return gistsDataSource.gistsCount
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let gist = gistsDataSource.gistFor(indexPath: indexPath)
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell",
-                                                 for: indexPath) as! GistsViewControllerTableViewCell
-        
-        self.configureCell(cell,
-                           withGist: gist)
-        return cell
     }
 }

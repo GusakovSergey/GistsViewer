@@ -15,6 +15,13 @@ struct GistsModule {
         let ownerName: String?
         let ownerAvatarURL: String?
         let gistName: String?
+        
+        init(id: String?, ownerName: String?, ownerAvatarURL: String?, gistName: String?) {
+            self.id = id
+            self.ownerName = ownerName
+            self.ownerAvatarURL = ownerAvatarURL
+            self.gistName = gistName
+        }
     }
 }
 
@@ -23,7 +30,7 @@ protocol GistsRouter {
 }
 
 protocol GistsInteractor {
-    func constructGistsDataSource() -> GistsModuleDataSource
+    func constructChangeTracker() -> ChangeTracker<GistsModule.Gist>
     
     func loadNewGists(completion: @escaping (Error?)->())
 }
@@ -33,12 +40,8 @@ protocol GistsModuleView: class {
 }
 
 protocol GistsModulePresenter {
-    var gsistsDataSource: GistsModuleDataSource { get }
-    
-    func didTriggerViewLoadEvent()
-    
     func showDetailsFor(gist: GistsModule.Gist)
-    
+    func constructChangeTracker() -> ChangeTracker<GistsModule.Gist>
     func loadNewGists(completion: @escaping (Error?)->())
 }
 

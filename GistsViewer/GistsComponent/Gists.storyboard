@@ -73,7 +73,6 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="V3z-H1-18I" id="wff-29-iIS"/>
                                     <outlet property="delegate" destination="V3z-H1-18I" id="IQC-j9-1I8"/>
                                 </connections>
                             </tableView>

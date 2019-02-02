@@ -21,15 +21,20 @@ class GistsModuleInteractorImpl: GistsInteractor {
         self.context = context
     }
     
-    //MARK: - GistsInteractor
-    func constructGistsDataSource() -> GistsModuleDataSource {
+    //MARK: - GistsInteractor    
+    func constructChangeTracker() -> ChangeTracker<GistsModule.Gist> {
         let fetchRequest: NSFetchRequest<Gist> = Gist.fetchRequest()
         fetchRequest.sortDescriptors = [Gist.updatedAtAttribute.descending()]
         let frc = NSFetchedResultsController(fetchRequest: fetchRequest,
                                              managedObjectContext: context,
                                              sectionNameKeyPath: nil,
                                              cacheName: nil)
-        return GistsModuleDataSourceImpl(frc: frc)
+        
+        return FRCChangeTracker(fetchedResultsController: frc,
+                                cast: { GistsModule.Gist(id: $0.id,
+                                                         ownerName: $0.owner?.name,
+                                                         ownerAvatarURL: $0.owner?.avatarURL,
+                                                         gistName: $0.name) })
     }
 
     func loadNewGists(completion: @escaping (Error?) -> ()) {

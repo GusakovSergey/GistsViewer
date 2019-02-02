@@ -17,10 +17,8 @@ class GistsModulePresenterImpl: GistsModulePresenter {
     }
     
     //MARK: - GistsPresenter
-    lazy var gsistsDataSource: GistsModuleDataSource = interactor.constructGistsDataSource()
-    
-    func didTriggerViewLoadEvent() {
-        gsistsDataSource.performFetch()
+    func constructChangeTracker() -> ChangeTracker<GistsModule.Gist> {
+        return interactor.constructChangeTracker()
     }
     
     func showDetailsFor(gist: GistsModule.Gist) {
