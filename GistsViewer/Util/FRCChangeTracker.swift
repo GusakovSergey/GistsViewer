@@ -9,13 +9,12 @@ import UIKit
 import CoreData
 
 class FRCChangeTracker<T: NSManagedObject, U>: ChangeTracker<U>, NSFetchedResultsControllerDelegate {
-    typealias Batch = ChangeTracker<U>.Batch
-    typealias Change = ChangeTracker<U>.Change
+    typealias Change = ChangeTrackerBatch<U>.Change
     
     //MARK: - Properties
     let fetchedResultsController: NSFetchedResultsController<T>
     
-    private var batch: Batch<U>?
+    private var batch: ChangeTrackerBatch<U>?
     private let cast: (T)->(U)
     
     init(fetchedResultsController: NSFetchedResultsController<T>,
@@ -43,7 +42,7 @@ class FRCChangeTracker<T: NSManagedObject, U>: ChangeTracker<U>, NSFetchedResult
     
     //MARK: - NSFetchedResultsControllerDelegate
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        batch = Batch()
+        batch = ChangeTrackerBatch()
     }
     
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {

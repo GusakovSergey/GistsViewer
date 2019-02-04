@@ -59,7 +59,6 @@
 		A58550E921FC74610089B780 /* GistsModuleInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550E821FC74610089B780 /* GistsModuleInteractorImpl.swift */; };
 		A58550EB21FC747B0089B780 /* GistsModuleRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550EA21FC747B0089B780 /* GistsModuleRouterImpl.swift */; };
 		A58550ED21FC74A20089B780 /* GistsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550EC21FC74A20089B780 /* GistsModule.swift */; };
-		A58550F021FC7CB60089B780 /* GistsModuleGistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550EF21FC7CB60089B780 /* GistsModuleGistTableViewCell.swift */; };
 		A58550F221FC84E70089B780 /* FRCChangeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550F121FC84E70089B780 /* FRCChangeTracker.swift */; };
 		A58550F721FCB8A40089B780 /* GistsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550F621FCB8A40089B780 /* GistsLoader.swift */; };
 		A58550FC21FCBD130089B780 /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58550FB21FCBD130089B780 /* NSManagedObjectContext+Extensions.swift */; };
@@ -90,10 +89,12 @@
 		A59EC1522205B2FC009D91AA /* OwnersGistsModuleInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1512205B2FC009D91AA /* OwnersGistsModuleInteractorImpl.swift */; };
 		A59EC1542205B404009D91AA /* OwnersGistsModulePresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1532205B404009D91AA /* OwnersGistsModulePresenterImpl.swift */; };
 		A59EC1572205B764009D91AA /* OwnersGistsModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1562205B764009D91AA /* OwnersGistsModuleViewController.swift */; };
-		A59EC15A2205BA04009D91AA /* OwnersGistsModuleGistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC1592205BA04009D91AA /* OwnersGistsModuleGistTableViewCell.swift */; };
 		A59EC15C2205BFE3009D91AA /* OwnersGistsModuleRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC15B2205BFE3009D91AA /* OwnersGistsModuleRouterImpl.swift */; };
 		A59EC15E2205C07D009D91AA /* OwnersGistsModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC15D2205C07D009D91AA /* OwnersGistsModuleFactory.swift */; };
 		A59EC1602205D890009D91AA /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59EC15F2205D890009D91AA /* UIViewController+Extensions.swift */; };
+		A5C6AABE220899B200AAD5E0 /* GistsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C6AABC220899B200AAD5E0 /* GistsListTableViewCell.swift */; };
+		A5C6AABF220899B200AAD5E0 /* GistsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5C6AABD220899B200AAD5E0 /* GistsListTableViewCell.xib */; };
+		A5C6AAC122089B8200AAD5E0 /* ChangeTrackerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C6AAC022089B8200AAD5E0 /* ChangeTrackerAdapter.swift */; };
 		DA73E6D0658FD8FAAA428ECB /* Pods_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9431ADA971DDE3596CFC76 /* Pods_Networking.framework */; };
 /* End PBXBuildFile section */
 
@@ -204,7 +205,6 @@
 		A58550E821FC74610089B780 /* GistsModuleInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModuleInteractorImpl.swift; sourceTree = "<group>"; };
 		A58550EA21FC747B0089B780 /* GistsModuleRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModuleRouterImpl.swift; sourceTree = "<group>"; };
 		A58550EC21FC74A20089B780 /* GistsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModule.swift; sourceTree = "<group>"; };
-		A58550EF21FC7CB60089B780 /* GistsModuleGistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsModuleGistTableViewCell.swift; sourceTree = "<group>"; };
 		A58550F121FC84E70089B780 /* FRCChangeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRCChangeTracker.swift; sourceTree = "<group>"; };
 		A58550F621FCB8A40089B780 /* GistsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsLoader.swift; sourceTree = "<group>"; };
 		A58550FB21FCBD130089B780 /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
@@ -234,10 +234,12 @@
 		A59EC1512205B2FC009D91AA /* OwnersGistsModuleInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersGistsModuleInteractorImpl.swift; sourceTree = "<group>"; };
 		A59EC1532205B404009D91AA /* OwnersGistsModulePresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersGistsModulePresenterImpl.swift; sourceTree = "<group>"; };
 		A59EC1562205B764009D91AA /* OwnersGistsModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersGistsModuleViewController.swift; sourceTree = "<group>"; };
-		A59EC1592205BA04009D91AA /* OwnersGistsModuleGistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersGistsModuleGistTableViewCell.swift; sourceTree = "<group>"; };
 		A59EC15B2205BFE3009D91AA /* OwnersGistsModuleRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersGistsModuleRouterImpl.swift; sourceTree = "<group>"; };
 		A59EC15D2205C07D009D91AA /* OwnersGistsModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersGistsModuleFactory.swift; sourceTree = "<group>"; };
 		A59EC15F2205D890009D91AA /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		A5C6AABC220899B200AAD5E0 /* GistsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsListTableViewCell.swift; sourceTree = "<group>"; };
+		A5C6AABD220899B200AAD5E0 /* GistsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GistsListTableViewCell.xib; sourceTree = "<group>"; };
+		A5C6AAC022089B8200AAD5E0 /* ChangeTrackerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeTrackerAdapter.swift; sourceTree = "<group>"; };
 		AEEE988981534462ADE6EF72 /* Pods-Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking.release.xcconfig"; path = "Pods/Target Support Files/Pods-Networking/Pods-Networking.release.xcconfig"; sourceTree = "<group>"; };
 		C8048DBDC5570CD503BB5D71 /* Pods-Services.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Services.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Services/Pods-Services.debug.xcconfig"; sourceTree = "<group>"; };
 		FD2D96C9BABF4F1AF4144366 /* Pods-GistsViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistsViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GistsViewer/Pods-GistsViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -466,7 +468,6 @@
 		A58550EE21FC7C930089B780 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A58550EF21FC7CB60089B780 /* GistsModuleGistTableViewCell.swift */,
 				A59EC14A22059C19009D91AA /* GistsModuleOwnerCollectionCell.swift */,
 			);
 			path = Views;
@@ -520,6 +521,7 @@
 				A585511821FDC6A00089B780 /* UIStoryboard+Extensions.swift */,
 				A59EC14822059127009D91AA /* ChangeTrackerBasedDataSource.swift */,
 				A59EC15F2205D890009D91AA /* UIViewController+Extensions.swift */,
+				A5C6AAC022089B8200AAD5E0 /* ChangeTrackerAdapter.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -527,6 +529,7 @@
 		A585511A21FDDD860089B780 /* GistsComponent */ = {
 			isa = PBXGroup;
 			children = (
+				A5C6AABB2208999B00AAD5E0 /* Shared */,
 				A58550E321FC73FE0089B780 /* GistsModule */,
 				A59EC14E2205B0A8009D91AA /* OwnersGistsModule */,
 				A512B66B2202020200BE3D3E /* GistDetailsModule */,
@@ -560,7 +563,6 @@
 		A59EC14E2205B0A8009D91AA /* OwnersGistsModule */ = {
 			isa = PBXGroup;
 			children = (
-				A59EC1582205B9EE009D91AA /* Views */,
 				A59EC14F2205B0C1009D91AA /* OwnersGistsModule.swift */,
 				A59EC1512205B2FC009D91AA /* OwnersGistsModuleInteractorImpl.swift */,
 				A59EC1532205B404009D91AA /* OwnersGistsModulePresenterImpl.swift */,
@@ -571,12 +573,13 @@
 			path = OwnersGistsModule;
 			sourceTree = "<group>";
 		};
-		A59EC1582205B9EE009D91AA /* Views */ = {
+		A5C6AABB2208999B00AAD5E0 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				A59EC1592205BA04009D91AA /* OwnersGistsModuleGistTableViewCell.swift */,
+				A5C6AABC220899B200AAD5E0 /* GistsListTableViewCell.swift */,
+				A5C6AABD220899B200AAD5E0 /* GistsListTableViewCell.xib */,
 			);
-			path = Views;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		C3A06C5055E1AF30A643606F /* Pods */ = {
@@ -792,6 +795,7 @@
 				A5854FCD21FC2B940089B780 /* Assets.xcassets in Resources */,
 				A585511C21FDDDC40089B780 /* Gists.storyboard in Resources */,
 				A58550CD21FC55D10089B780 /* PreparingApp.storyboard in Resources */,
+				A5C6AABF220899B200AAD5E0 /* GistsListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -947,6 +951,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C6AABE220899B200AAD5E0 /* GistsListTableViewCell.swift in Sources */,
 				A59EC1502205B0C1009D91AA /* OwnersGistsModule.swift in Sources */,
 				A59EC14B22059C19009D91AA /* GistsModuleOwnerCollectionCell.swift in Sources */,
 				A50B6423220364D800F7B20F /* ChangeTracker.swift in Sources */,
@@ -958,7 +963,6 @@
 				A59EC13E2204ABBB009D91AA /* FileDetailsModule.swift in Sources */,
 				A59EC1442204AF3B009D91AA /* FileDetailsModuleInteractorImpl.swift in Sources */,
 				A59EC1422204AEF8009D91AA /* FileDetailsModulePresenterImpl.swift in Sources */,
-				A59EC15A2205BA04009D91AA /* OwnersGistsModuleGistTableViewCell.swift in Sources */,
 				A50B64252203660D00F7B20F /* GistDetailsModuleInteractorImpl.swift in Sources */,
 				A512B67322020A3F00BE3D3E /* GistDetailsModuleFileCell.swift in Sources */,
 				A50B642E2203717400F7B20F /* GistDetailsModuleRouterImpl.swift in Sources */,
@@ -967,6 +971,7 @@
 				A59EC1602205D890009D91AA /* UIViewController+Extensions.swift in Sources */,
 				A58550E521FC74190089B780 /* GistsModuleViewController.swift in Sources */,
 				A512B66D2202024200BE3D3E /* GistDetailsModule.swift in Sources */,
+				A5C6AAC122089B8200AAD5E0 /* ChangeTrackerAdapter.swift in Sources */,
 				A59EC15E2205C07D009D91AA /* OwnersGistsModuleFactory.swift in Sources */,
 				A585511921FDC6A00089B780 /* UIStoryboard+Extensions.swift in Sources */,
 				A58550ED21FC74A20089B780 /* GistsModule.swift in Sources */,
@@ -975,7 +980,6 @@
 				A58550E721FC743C0089B780 /* GistsModulePresenterImpl.swift in Sources */,
 				A59EC1522205B2FC009D91AA /* OwnersGistsModuleInteractorImpl.swift in Sources */,
 				A59EC1462204B021009D91AA /* FileDetailsModuleFactory.swift in Sources */,
-				A58550F021FC7CB60089B780 /* GistsModuleGistTableViewCell.swift in Sources */,
 				A512B66F220202A700BE3D3E /* GistDetailsModuleViewController.swift in Sources */,
 				A50B642C22036FEE00F7B20F /* GistDetailsModulePresenterImpl.swift in Sources */,
 				A59EC14922059127009D91AA /* ChangeTrackerBasedDataSource.swift in Sources */,

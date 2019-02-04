@@ -17,7 +17,8 @@ class GistsModuleViewController: UIViewController, GistsModuleView {
     
     var presenter: GistsModulePresenter!
     
-    private var tableViewDataSource: ChangeTrackerBasedDataSource<GistsModuleGistTableViewCell>!
+    private var gistsTrackerAdapter: ChangeTrackerAdapter<GistsListTableViewCellModel, GistsModule.Gist>!
+    private var tableViewDataSource: ChangeTrackerBasedDataSource<GistsListTableViewCell>!
     private var ownersChangeTracker: ChangeTracker<GistsModule.Owner>!
     
     override func viewDidLoad() {
@@ -25,11 +26,17 @@ class GistsModuleViewController: UIViewController, GistsModuleView {
         
         title = "Gists Viewer"
         
+        tableView.register(GistsListTableViewCell.nib(),
+                           forCellReuseIdentifier: "gistCell")
+        
         refreshControll.addTarget(self, action: #selector(refreshGists), for: .valueChanged)
         
-        tableViewDataSource = ChangeTrackerBasedDataSource<GistsModuleGistTableViewCell>(changeTracker: presenter.constructGistsChangeTracker(),
-                                                                                             tableView: tableView,
-                                                                                             cellReuseIdentifier: "cell")
+        gistsTrackerAdapter = ChangeTrackerAdapter<GistsListTableViewCellModel, GistsModule.Gist>(adaptee: presenter.constructGistsChangeTracker(),
+                                                                                                  block: { $0 })
+        
+        tableViewDataSource = ChangeTrackerBasedDataSource<GistsListTableViewCell>(changeTracker: gistsTrackerAdapter,
+                                                                                   tableView: tableView,
+                                                                                   cellReuseIdentifier: "gistCell")
         tableView.dataSource = tableViewDataSource
         
         ownersChangeTracker = presenter.constructOwnersChangeTracker()
@@ -50,32 +57,11 @@ class GistsModuleViewController: UIViewController, GistsModuleView {
             self?.refreshControll.endRefreshing()
         }
     }
-    
-    //MARK: - Private
-    
-    private func batchUpdateHandler(batch: ChangeTracker<GistsModule.Gist>.Batch<GistsModule.Gist>) {
-        tableView.processChangeTrackerBatch(batch,
-                                            updateCellBlock: { (indexPath, gist) in
-                                                if let cell = tableView.cellForRow(at: indexPath) {
-                                                    configureCell(cell as! GistsModuleGistTableViewCell,
-                                                                  withGist: gist)
-                                                }
-        })
-    }
-    
-    private func configureCell(_ cell: GistsModuleGistTableViewCell, withGist gist: GistsModule.Gist) {
-        cell.gistNameLabel.text = gist.gistName
-        cell.gistOwnerLabel.text = gist.ownerName
-        if let urlString = gist.ownerAvatarURL, let url = URL(string: urlString) {
-            Nuke.loadImage(with: url,
-                           into: cell.avatarImageView)
-        }
-    }
 }
 
 extension GistsModuleViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter.showDetailsFor(gist: tableViewDataSource.changeTracker.modelFor(indexPath: indexPath))
+        presenter.showDetailsFor(gist: gistsTrackerAdapter.adapteeTracker.modelFor(indexPath: indexPath))
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
@@ -104,3 +90,5 @@ extension GistsModuleViewController: UICollectionViewDelegate {
         collectionView.deselectItem(at: indexPath, animated: true)
     }
 }
+
+extension GistsModule.Gist: GistsListTableViewCellModel { }

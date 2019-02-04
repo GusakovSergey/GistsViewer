@@ -74,56 +74,10 @@
                                     </connections>
                                 </collectionView>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="JP8-M3-VQ6">
-                                    <rect key="frame" x="0.0" y="169" width="414" height="1"/>
+                                    <rect key="frame" x="0.0" y="80" width="414" height="1"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="61" id="Scg-J8-FGy" customClass="GistsModuleGistTableViewCell" customModule="GistsViewer" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="108" width="414" height="61"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Scg-J8-FGy" id="thK-Ix-eFT">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="60.666666666666664"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rVd-BL-HM1">
-                                                    <rect key="frame" x="25" y="10.333333333333336" width="40" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="5a1-Ya-S5M"/>
-                                                        <constraint firstAttribute="width" constant="40" id="WVh-cC-mJl"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gist name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqH-h1-gk1">
-                                                    <rect key="frame" x="73" y="7" width="77" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="owner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8D-U4-IE2">
-                                                    <rect key="frame" x="73" y="35" width="45" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="AqH-h1-gk1" firstAttribute="top" secondItem="thK-Ix-eFT" secondAttribute="top" constant="7" id="J5J-rz-eSX"/>
-                                                <constraint firstItem="n8D-U4-IE2" firstAttribute="leading" secondItem="rVd-BL-HM1" secondAttribute="trailing" constant="8" id="TMD-92-zKX"/>
-                                                <constraint firstItem="AqH-h1-gk1" firstAttribute="leading" secondItem="rVd-BL-HM1" secondAttribute="trailing" constant="8" id="Zli-F2-YGL"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="n8D-U4-IE2" secondAttribute="trailing" id="fXf-wh-S0O"/>
-                                                <constraint firstItem="rVd-BL-HM1" firstAttribute="centerY" secondItem="thK-Ix-eFT" secondAttribute="centerY" id="ktD-x0-4YI"/>
-                                                <constraint firstItem="n8D-U4-IE2" firstAttribute="firstBaseline" secondItem="rVd-BL-HM1" secondAttribute="bottom" id="u6W-E8-QSP"/>
-                                                <constraint firstItem="rVd-BL-HM1" firstAttribute="leading" secondItem="thK-Ix-eFT" secondAttribute="leading" constant="25" id="yBf-L8-9YP"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="AqH-h1-gk1" secondAttribute="trailing" id="yWe-EA-laD"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="avatarImageView" destination="rVd-BL-HM1" id="YDA-Zh-ZkL"/>
-                                            <outlet property="gistNameLabel" destination="AqH-h1-gk1" id="ybH-Z5-07s"/>
-                                            <outlet property="gistOwnerLabel" destination="n8D-U4-IE2" id="l4S-hK-mik"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="delegate" destination="V3z-H1-18I" id="IQC-j9-1I8"/>
                                 </connections>
@@ -159,56 +113,10 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="gOh-pt-y95">
-                                    <rect key="frame" x="0.0" y="89" width="414" height="1"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="61" id="Tfd-kv-oTU" customClass="OwnersGistsModuleGistTableViewCell" customModule="GistsViewer" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="61"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tfd-kv-oTU" id="YVM-Iy-h0T">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="60.666666666666664"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jfg-4G-hLe">
-                                                    <rect key="frame" x="25" y="10.333333333333336" width="40" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="1k5-Vw-MZA"/>
-                                                        <constraint firstAttribute="height" constant="40" id="g2O-ql-499"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gist name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOi-hk-e6E">
-                                                    <rect key="frame" x="73" y="7" width="77" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="owner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7g-jE-3dQ">
-                                                    <rect key="frame" x="73" y="35" width="45" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Jfg-4G-hLe" firstAttribute="centerY" secondItem="YVM-Iy-h0T" secondAttribute="centerY" id="PCf-9n-83U"/>
-                                                <constraint firstItem="HOi-hk-e6E" firstAttribute="top" secondItem="YVM-Iy-h0T" secondAttribute="top" constant="7" id="do2-9u-uDC"/>
-                                                <constraint firstItem="Jfg-4G-hLe" firstAttribute="leading" secondItem="YVM-Iy-h0T" secondAttribute="leading" constant="25" id="fX2-Xm-s7E"/>
-                                                <constraint firstItem="x7g-jE-3dQ" firstAttribute="leading" secondItem="Jfg-4G-hLe" secondAttribute="trailing" constant="8" id="ltG-c1-bYm"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="HOi-hk-e6E" secondAttribute="trailing" id="tDU-I1-HYb"/>
-                                                <constraint firstItem="HOi-hk-e6E" firstAttribute="leading" secondItem="Jfg-4G-hLe" secondAttribute="trailing" constant="8" id="tYc-pc-YpH"/>
-                                                <constraint firstItem="x7g-jE-3dQ" firstAttribute="firstBaseline" secondItem="Jfg-4G-hLe" secondAttribute="bottom" id="vC8-Ip-NKH"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="x7g-jE-3dQ" secondAttribute="trailing" id="xFR-wr-ctp"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="avatarImageView" destination="Jfg-4G-hLe" id="hme-uC-SBQ"/>
-                                            <outlet property="gistNameLabel" destination="HOi-hk-e6E" id="DWS-gy-onH"/>
-                                            <outlet property="gistOwnerLabel" destination="x7g-jE-3dQ" id="3c3-qX-hJ3"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="delegate" destination="F8l-zY-K3Y" id="Yhb-PH-IVa"/>
                                 </connections>

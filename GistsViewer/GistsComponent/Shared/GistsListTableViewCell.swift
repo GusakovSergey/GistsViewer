@@ -1,14 +1,33 @@
 //
-//  GistsViewControllerTableViewCell.swift
+//  GistsListTableViewCell.swift
 //  GistsViewer
 //
-//  Created by Sergey on 26/01/2019.
+//  Created by Sergey on 04/02/2019.
 //
 
 import UIKit
 import Nuke
 
-class GistsModuleGistTableViewCell: UITableViewCell {
+protocol GistsListTableViewCellModel {
+    var gistName: String? { get }
+    var ownerName: String? { get }
+    var ownerAvatarURL: String? { get }
+}
+
+class GistsListTableViewCell: UITableViewCell {
+    
+    static var rowHeight: CGFloat {
+        return 60
+    }
+    
+    static var nibName: String {
+        return "GistsListTableViewCell"
+    }
+    
+    static func nib() -> UINib {
+        return UINib(nibName: nibName, bundle: nil)
+    }
+    
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var gistNameLabel: UILabel!
     @IBOutlet weak var gistOwnerLabel: UILabel!
@@ -27,10 +46,10 @@ class GistsModuleGistTableViewCell: UITableViewCell {
     }
 }
 
-extension GistsModuleGistTableViewCell: ConfigurableByModelCell {
-    typealias Model = GistsModule.Gist
+extension GistsListTableViewCell: ConfigurableByModelCell {
+    typealias Model = GistsListTableViewCellModel
     
-    func configureWith(model: GistsModule.Gist) {
+    func configureWith(model: GistsListTableViewCellModel) {
         gistNameLabel.text = model.gistName
         gistOwnerLabel.text = model.ownerName
         
